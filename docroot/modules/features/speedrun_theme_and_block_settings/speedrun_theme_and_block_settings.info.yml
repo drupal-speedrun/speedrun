@@ -1,0 +1,9 @@
+name: 'Theme and Block Settings'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - help
+  - system
+version: 8.0.0
+package: Speedrun
