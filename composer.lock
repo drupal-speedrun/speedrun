@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1779a3229966d44859fa09fcd810f1cf",
-    "content-hash": "b0cb7f717932ecc83ab8bd539dc14c87",
+    "hash": "828a7a0121e85ea0c33411b2f77b510d",
+    "content-hash": "3f97c9a242b568fc5de02d9339114be2",
     "packages": [
         {
             "name": "composer/installers",
@@ -1209,6 +1209,41 @@
             "description": "Enables administrators to package configuration into modules.",
             "homepage": "https://www.drupal.org/project/features",
             "time": "2016-08-04 18:45:56"
+        },
+        {
+            "name": "drupal/flag",
+            "version": "dev-8.x-4.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/flag",
+                "reference": "16657d8f84b9c87144615e4fbe551ad9a893ad75"
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/flag_bookmark": "self.version",
+                "drupal/flag_follower": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/flag_bookmark, drupal/flag_follower",
+                "drupal/node": "Required by drupal/flag_bookmark, drupal/flag_follower",
+                "drupal/user": "Required by drupal/flag_follower",
+                "drupal/views": "Required by drupal/flag_bookmark, drupal/flag_follower"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-4.x": "8.4.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Create customized flags that users can set on entities.",
+            "homepage": "https://www.drupal.org/project/flag",
+            "time": "2016-07-29 08:54:21"
         },
         {
             "name": "drupal/inline_entity_form",
@@ -6386,7 +6421,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal-speedrun/diniz": 20
+        "drupal-speedrun/diniz": 20,
+        "drupal/flag": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

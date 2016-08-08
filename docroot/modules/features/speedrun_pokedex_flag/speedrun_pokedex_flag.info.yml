@@ -1,0 +1,9 @@
+name: 'Pokedex Flag'
+description: 'Pokedex flag configuration'
+type: module
+core: 8.x
+dependencies:
+  - flag
+  - node
+version: 8.0.0
+package: Speedrun
