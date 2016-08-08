@@ -7,9 +7,11 @@ dependencies:
   - menu_ui
   - node
   - path
+  - speedrun_pokedex_flag
   - taxonomy
   - text
   - user
+  - views
   - workbench_moderation
 version: 8.0.0
 package: Speedrun
