@@ -1,5 +1,5 @@
 name: 'Speedrun Core'
 type: module
 description: 'Custom install steps and config for the Speedrun'
-package: 'Custom'
+package: 'Speedrun'
 core: 8.x
