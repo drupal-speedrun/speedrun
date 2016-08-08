@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pokemon.field_type
+    - node.type.pokemon
+  module:
+    - user
+id: node.pokemon.teaser
+targetEntityType: node
+bundle: pokemon
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_type: true

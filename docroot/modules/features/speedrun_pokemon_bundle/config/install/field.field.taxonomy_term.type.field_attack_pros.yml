@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_attack_pros
+    - taxonomy.vocabulary.type
+id: taxonomy_term.type.field_attack_pros
+field_name: field_attack_pros
+entity_type: taxonomy_term
+bundle: type
+label: 'Attack Pros'
+description: 'List of other Types against which this Types is super-effective.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type: type
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
