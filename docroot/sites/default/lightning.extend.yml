@@ -16,9 +16,11 @@ modules:
   - features_ui
   - speedrun_core
   - speedrun_theme_and_block_settings
-  # The following features will be built live.
+  # The following features will be built live and should be commented out when
+  # building for the speedrun.
   - speedrun_pokemon_bundle
   - speedrun_pokedex_flag
+  - speedrun_user_display
 
 # A system path to redirect to once installation is complete.
 redirect:
