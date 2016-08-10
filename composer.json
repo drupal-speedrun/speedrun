@@ -72,6 +72,20 @@
                 "type:drupal-drush"
             ]
         },
-        "enable-patching": true
+        "enable-patching": true,
+        "patches": {
+            "drupal/panelizer": {
+                "2747739 - Mega Patch":
+                "https://www.drupal.org/files/issues/panelizer--alpha2-1ddfa61--2747739-5.patch",
+                "2701349 - Generate new UUIDs for displays when switching from default to field storage":
+                "https://www.drupal.org/files/issues/2701349-2.patch",
+                "2700597 - Explicitly set the Panels IPE URL root when saving in Panelizer":
+                "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch",
+                "2664682 - Implement admin UI for editing Panelizer defaults":
+                "https://www.drupal.org/files/issues/2664682-49.patch",
+                "2664572 - Add support for User entities":
+                "https://www.drupal.org/files/issues/2664572-3.patch"
+            }
+        }
     }
 }

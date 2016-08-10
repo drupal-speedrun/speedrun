@@ -18,6 +18,8 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+  flag_pokedex:
+    weight: 10
   links:
     weight: 100
 hidden: {  }

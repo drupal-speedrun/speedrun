@@ -17,8 +17,8 @@ modules:
   - speedrun_core
   - speedrun_theme_and_block_settings
   # The following features will be built live.
-  # - speedrun_pokemon_bundle
-  # - speedrun_pokedex_flag
+  - speedrun_pokemon_bundle
+  - speedrun_pokedex_flag
 
 # A system path to redirect to once installation is complete.
 redirect:

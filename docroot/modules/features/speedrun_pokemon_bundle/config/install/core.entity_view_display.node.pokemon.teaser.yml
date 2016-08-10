@@ -12,6 +12,8 @@ targetEntityType: node
 bundle: pokemon
 mode: teaser
 content:
+  flag_pokedex:
+    weight: 10
   links:
     weight: 100
 hidden:
