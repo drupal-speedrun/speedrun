@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_japanese_name
+    - node.type.pokemon
+id: node.pokemon.field_japanese_name
+field_name: field_japanese_name
+entity_type: node
+bundle: pokemon
+label: 'Japanese name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

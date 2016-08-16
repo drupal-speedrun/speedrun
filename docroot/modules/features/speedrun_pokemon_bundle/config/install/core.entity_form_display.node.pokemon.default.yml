@@ -2,9 +2,18 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.pokemon.field_abilities
+    - field.field.node.pokemon.field_growth_rate
+    - field.field.node.pokemon.field_height
+    - field.field.node.pokemon.field_image
+    - field.field.node.pokemon.field_japanese_name
+    - field.field.node.pokemon.field_species
     - field.field.node.pokemon.field_type
+    - field.field.node.pokemon.field_weight
+    - image.style.thumbnail
     - node.type.pokemon
   module:
+    - image
     - path
     - workbench_moderation
 id: node.pokemon.default
@@ -17,6 +26,52 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
+  field_abilities:
+    weight: 37
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+  field_growth_rate:
+    weight: 36
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_height:
+    weight: 33
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+  field_image:
+    type: entity_browser_file
+    weight: 38
+    settings:
+      entity_browser: image_browser
+      field_widget_edit: true
+      field_widget_remove: true
+      view_mode: default
+      preview_image_style: thumbnail
+      open: true
+      selection_mode: append
+    third_party_settings: {  }
+  field_japanese_name:
+    weight: 35
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_species:
+    weight: 32
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
   field_type:
     weight: 31
     settings:
@@ -25,6 +80,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+  field_weight:
+    weight: 34
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
   path:
     type: path
     weight: 30
