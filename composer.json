@@ -26,7 +26,8 @@
         "drupal-speedrun/diniz": "8.0.x-dev",
         "drupal/flag": "8.4.x-dev",
         "drupal/devel": "8.*",
-        "drupal/migrate_plus": "^8.2.0"
+        "drupal/migrate_plus": "^8.2.0",
+        "drupal/migrate_tools": "^8.2.0"
     },
     "repositories": [
         {
