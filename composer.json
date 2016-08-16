@@ -25,7 +25,8 @@
         "drupal/bootstrap": "8.3.0-rc2",
         "drupal-speedrun/diniz": "8.0.x-dev",
         "drupal/flag": "8.4.x-dev",
-        "drupal/devel": "8.*"
+        "drupal/devel": "8.*",
+        "drupal/migrate_plus": "^8.2.0"
     },
     "repositories": [
         {

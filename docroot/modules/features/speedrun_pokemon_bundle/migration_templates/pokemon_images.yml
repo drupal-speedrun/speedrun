@@ -1,0 +1,7 @@
+id: pokemon_images
+label: Pokemon Images
+source:
+  plugin: url
+process:
+destination:
+  plugin: 'entity:file'
