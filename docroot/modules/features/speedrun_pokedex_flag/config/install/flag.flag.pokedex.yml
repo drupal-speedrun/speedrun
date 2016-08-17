@@ -19,7 +19,7 @@ unflag_long: Remove
 unflag_message: 'This Pokemon has been removed from your Pokedex.'
 unflag_denied_text: ''
 flag_type: 'entity:node'
-link_type: reload
+link_type: ajax_link
 flagTypeConfig:
   show_in_links: {  }
   show_as_field: 1
