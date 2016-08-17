@@ -10,6 +10,7 @@ dependencies:
   - image
   - menu_ui
   - node
+  - panelizer
   - path
   - speedrun_pokedex_flag
   - taxonomy

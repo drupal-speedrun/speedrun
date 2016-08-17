@@ -9,7 +9,7 @@ field_name: field_blog
 entity_type: node
 bundle: article
 label: Blog
-description: 'Include this Article in the Blog.'
+description: 'Include this Article in Blog listings.'
 required: false
 translatable: false
 default_value:
@@ -18,5 +18,5 @@ default_value:
 default_value_callback: ''
 settings:
   on_label: Include
-  off_label: 'Don''t Include'
+  off_label: 'Don''t include'
 field_type: boolean

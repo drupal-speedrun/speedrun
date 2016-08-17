@@ -14,11 +14,11 @@ bundle: article
 mode: default
 content:
   body:
-    label: hidden
-    type: text_default
     weight: 101
+    label: above
     settings: {  }
     third_party_settings: {  }
+    type: text_default
   field_blog:
     weight: 102
     label: above
@@ -30,4 +30,6 @@ content:
     type: boolean
   links:
     weight: 100
+  workbench_moderation_control:
+    weight: -20
 hidden: {  }
