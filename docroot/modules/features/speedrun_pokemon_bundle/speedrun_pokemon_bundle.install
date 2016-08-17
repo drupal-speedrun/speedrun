@@ -24,7 +24,7 @@ function speedrun_pokemon_bundle_install() {
   $types = array_unique($types);
   $types = array_map(
     function ($type) {
-      $term = Term::create(['name' => $type, 'vid' => 'types']);
+      $term = Term::create(['name' => $type, 'vid' => 'type']);
       $term->save();
 
       return $term;
