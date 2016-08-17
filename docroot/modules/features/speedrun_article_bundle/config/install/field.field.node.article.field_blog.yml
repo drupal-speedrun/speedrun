@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blog
+    - node.type.article
+id: node.article.field_blog
+field_name: field_blog
+entity_type: node
+bundle: article
+label: Blog
+description: 'Include this Article in the Blog.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Include
+  off_label: 'Don''t Include'
+field_type: boolean
