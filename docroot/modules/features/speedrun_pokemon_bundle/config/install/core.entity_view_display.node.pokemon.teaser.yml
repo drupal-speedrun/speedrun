@@ -3,7 +3,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.pokemon.field_growth_rate
+    - field.field.node.pokemon.field_height
+    - field.field.node.pokemon.field_image
+    - field.field.node.pokemon.field_japanese_name
+    - field.field.node.pokemon.field_species
     - field.field.node.pokemon.field_type
+    - field.field.node.pokemon.field_weight
     - node.type.pokemon
   module:
     - user
@@ -17,4 +23,10 @@ content:
   links:
     weight: 100
 hidden:
+  field_growth_rate: true
+  field_height: true
+  field_image: true
+  field_japanese_name: true
+  field_species: true
   field_type: true
+  field_weight: true

@@ -20,11 +20,12 @@ bundle: pokemon
 mode: default
 content:
   field_abilities:
-    weight: 107
+    weight: 109
     label: above
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    type: basic_string
+    type: string
   field_growth_rate:
     weight: 106
     label: above

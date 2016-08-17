@@ -10,10 +10,9 @@ dependencies:
     - field.field.node.pokemon.field_species
     - field.field.node.pokemon.field_type
     - field.field.node.pokemon.field_weight
-    - image.style.thumbnail
     - node.type.pokemon
   module:
-    - image
+    - entity_browser
     - path
     - workbench_moderation
 id: node.pokemon.default
@@ -27,12 +26,12 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_abilities:
-    weight: 37
+    weight: 39
     settings:
-      rows: 5
+      size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
+    type: string_textfield
   field_growth_rate:
     weight: 36
     settings:

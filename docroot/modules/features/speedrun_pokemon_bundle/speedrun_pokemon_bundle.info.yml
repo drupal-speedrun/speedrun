@@ -1,8 +1,9 @@
 name: 'Pokemon Bundle'
-description: 'The Pokemon node bundle and associated Type Vocab.'
+description: 'The Pokemon node bundle, associated Type Vocab, and Views.'
 type: module
 core: 8.x
 dependencies:
+  - entity_browser
   - field
   - file
   - flag

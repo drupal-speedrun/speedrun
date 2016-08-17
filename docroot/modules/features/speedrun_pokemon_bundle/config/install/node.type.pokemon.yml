@@ -9,7 +9,7 @@ third_party_settings:
     parent: ''
 name: Pokemon
 type: pokemon
-description: ''
+description: 'A species of Pokemon and it''s attributes.'
 help: ''
 new_revision: false
 preview_mode: 0
