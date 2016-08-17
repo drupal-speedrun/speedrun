@@ -21,6 +21,7 @@ modules:
   - speedrun_pokemon_bundle
   - speedrun_pokedex_flag
   - speedrun_user_display
+  - speedrun_article_bundle
 
 # A system path to redirect to once installation is complete.
 redirect:

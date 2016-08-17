@@ -1,0 +1,14 @@
+name: 'Article Bundle'
+description: 'The Article Node Bundle.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
+  - workbench_moderation
+version: 8.0.0
+package: Speedrun
