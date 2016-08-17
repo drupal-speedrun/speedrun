@@ -77,6 +77,10 @@
         },
         "enable-patching": true,
         "patches": {
+            "drupal/core": {
+                "2655104 - List unmet dependencies instead of just failing":
+                "https://www.drupal.org/files/issues/missing-dependencies-2655104-8.patch"
+            },
             "drupal/panelizer": {
                 "2664572 - Add support for User entities":
                 "https://www.drupal.org/files/issues/2664572-3.patch"

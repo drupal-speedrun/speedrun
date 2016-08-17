@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b029b813862ec6b4b21985e6b327dbc2",
-    "content-hash": "3fbf782b2bde87c4b47a1ac54905f89a",
+    "hash": "b5608ac3b96320dbf4f91ed9509f396a",
+    "content-hash": "f9eec8c0efc558b4f026b294e98935e5",
     "packages": [
         {
             "name": "composer/installers",
@@ -945,7 +945,7 @@
             "type": "drupal-core",
             "extra": {
                 "patches_applied": {
-                    "Plugin Lazy loading can cause usort warning": "https://www.drupal.org/files/issues/Iterating-through-array--2699157.patch"
+                    "2655104 - List unmet dependencies instead of just failing": "https://www.drupal.org/files/issues/missing-dependencies-2655104-8.patch"
                 }
             },
             "autoload": {
