@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b5608ac3b96320dbf4f91ed9509f396a",
-    "content-hash": "f9eec8c0efc558b4f026b294e98935e5",
+    "hash": "5d3be16ea25f27095e788a23866e5c93",
+    "content-hash": "63cac73be5286c2342cf879ac3d9dd36",
     "packages": [
         {
             "name": "composer/installers",
@@ -754,6 +754,38 @@
             "description": "Built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.",
             "homepage": "https://www.drupal.org/project/bootstrap",
             "time": "2016-08-03 05:45:18"
+        },
+        {
+            "name": "drupal/bootstrap_layouts",
+            "version": "8.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/bootstrap_layouts.git",
+                "reference": "4b13a7bdf8768ee5d7dbd7beaf4b7f243463f5b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_layouts-8.x-3.1.zip",
+                "reference": "4b13a7bdf8768ee5d7dbd7beaf4b7f243463f5b0",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/layout_plugin": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-3.x": "8.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "This module is going to generate layouts with Bootstrap grid system.",
+            "homepage": "https://www.drupal.org/project/bootstrap_layouts",
+            "time": "2016-03-11 09:20:06"
         },
         {
             "name": "drupal/config_update",
@@ -1868,7 +1900,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/migrate_tools-8.x-2.0-beta1.zip",
-                "reference": null,
+                "reference": "e23d12cefc71fb35800878078fdb247d1b05307d",
                 "shasum": null
             },
             "require": {
@@ -2176,6 +2208,32 @@
             "description": "Provides a field type for displaying videos from 3rd party providers such as YouTube and Vimeo.",
             "homepage": "https://www.drupal.org/project/video_embed_field",
             "time": "2016-08-11 02:35:09"
+        },
+        {
+            "name": "drupal/views_bootstrap",
+            "version": "dev-8.x-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_bootstrap",
+                "reference": "3a70ae46ffad42e53c628633e16c728557b422b6"
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/views": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-3.x": "8.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Bootstrap Components.",
+            "homepage": "https://www.drupal.org/project/views_bootstrap",
+            "time": "2016-01-31 21:34:34"
         },
         {
             "name": "drupal/views_infinite_scroll",
@@ -6564,7 +6622,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal-speedrun/diniz": 20,
-        "drupal/flag": 20
+        "drupal/flag": 20,
+        "drupal/views_bootstrap": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
