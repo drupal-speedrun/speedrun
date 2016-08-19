@@ -1,0 +1,13 @@
+{
+    "name": "drupal-speedrun/diniz",
+    "description": "Bootstrap subtheme used in the DCDublin Speedrun Session.",
+    "type": "drupal-theme",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Adam Balsam",
+            "email": "balsam.adam@gmail.com"
+        }
+    ],
+    "require": {}
+}

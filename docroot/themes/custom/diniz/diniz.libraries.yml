@@ -1,0 +1,8 @@
+global-styling:
+  css:
+    theme:
+      css/base.css: {}
+      css/layout.css: {}
+      css/component.css: {}
+      css/state.css: {}
+      css/theme.css: {}

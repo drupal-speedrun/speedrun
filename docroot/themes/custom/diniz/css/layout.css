@@ -1,0 +1,65 @@
+/**
+ * @file layour.scss
+ *   Divides the page into sections. Layouts hold one or more modules together.
+ */
+/**
+ * Columns
+ */
+/* line 9, ../sass/layout.scss */
+.image-inline {
+  height: auto;
+  max-width: 100%;
+}
+/* line 12, ../sass/layout.scss */
+.image-inline.image-inline_small_left, .image-inline.image-inline_small_right {
+  clear: both;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  /* line 12, ../sass/layout.scss */
+  .image-inline.image-inline_small_left, .image-inline.image-inline_small_right {
+    clear: none;
+    width: 30%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 12, ../sass/layout.scss */
+  .image-inline.image-inline_small_left, .image-inline.image-inline_small_right {
+    width: 20%;
+  }
+}
+/* line 24, ../sass/layout.scss */
+.image-inline.image-inline_medium_left, .image-inline.image-inline_medium_right {
+  clear: both;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  /* line 24, ../sass/layout.scss */
+  .image-inline.image-inline_medium_left, .image-inline.image-inline_medium_right {
+    clear: none;
+    width: 40%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 24, ../sass/layout.scss */
+  .image-inline.image-inline_medium_left, .image-inline.image-inline_medium_right {
+    width: 48%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 37, ../sass/layout.scss */
+  .image-inline.image-inline_small_left, .image-inline.image-inline_media_left {
+    float: left;
+    padding-right: 15px;
+  }
+  /* line 42, ../sass/layout.scss */
+  .image-inline.image-inline_small_right, .image-inline.image-inline_medium_right {
+    float: right;
+    padding-left: 15px;
+  }
+}
+
+/* line 54, ../sass/layout.scss */
+article.panel:last-child {
+  margin-bottom: 30px;
+}

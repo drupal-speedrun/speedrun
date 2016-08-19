@@ -1,0 +1,56 @@
+/**
+ * @file layour.scss
+ *   Divides the page into sections. Layouts hold one or more modules together.
+ */
+
+@import "vars";
+@import "mixins";
+
+.image-inline {
+  height: auto;
+  max-width: 100%;
+  &.image-inline_small_left,
+  &.image-inline_small_right {
+    clear: both;
+    width: 100%;
+    @media (min-width: 768px) {
+      clear: none;
+      width: 30%;
+    }
+    @media (min-width: 992px) {
+      width: 20%;
+    }
+  }
+  &.image-inline_medium_left,
+  &.image-inline_medium_right {
+    clear: both;
+    width: 100%;
+    @media (min-width: 768px) {
+      clear: none;
+      width: 40%;
+    }
+    @media (min-width: 992px) {
+      width: 48%;
+    }
+  }
+  @media (min-width: 768px) {
+    &.image-inline_small_left,
+    &.image-inline_media_left {
+      float: left;
+      padding-right: 15px;
+    }
+    &.image-inline_small_right,
+    &.image-inline_medium_right {
+      float: right;
+      padding-left: 15px;
+    }
+  }
+}
+
+// Panels aren't necessarily in rows like they should be so we add some padding
+// to the bottom of each for our main pakemon views. Each panel is contained
+// within its own div, so we need to use :last-child to override styles from
+// bootstrap.
+article.panel:last-child {
+  margin-bottom: 30px;
+}

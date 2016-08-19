@@ -1,0 +1,137 @@
+/**
+ * @file base.scss
+ *   Defaults. They are almost exclusively single element selectors but it
+ *   could include attribute selectors, pseudo-class selectors, child
+ *   selectors or sibling selectors. Essentially, a base style says that
+ *   wherever this element is on the page, it should look like this.
+ */
+/**
+ * Columns
+ */
+/* line 12, ../sass/base.scss */
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 1199px) {
+  /* line 12, ../sass/base.scss */
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 991px) {
+  /* line 12, ../sass/base.scss */
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 12, ../sass/base.scss */
+  html {
+    font-size: 43.75%;
+  }
+}
+
+/* line 27, ../sass/base.scss */
+body {
+  font-family: sans-serif;
+  font-size: 1.8em;
+  font-weight: 300;
+}
+
+/* line 33, ../sass/base.scss */
+h1 {
+  font-size: 3.6rem;
+}
+
+/* line 36, ../sass/base.scss */
+h2 {
+  font-size: 3.2rem;
+}
+
+/* line 39, ../sass/base.scss */
+h3 {
+  font-size: 3rem;
+}
+
+/* line 42, ../sass/base.scss */
+h4 {
+  font-size: 2.4rem;
+}
+
+/* line 45, ../sass/base.scss */
+h5 {
+  font-size: 2rem;
+}
+
+/* line 48, ../sass/base.scss */
+h6 {
+  font-size: 1.8rem;
+}
+
+/* line 52, ../sass/base.scss */
+a {
+  color: #1183f8;
+}
+/* line 54, ../sass/base.scss */
+a:hover {
+  color: #1183f8;
+  text-decoration: underline;
+}
+
+/* line 61, ../sass/base.scss */
+.reverse-contrast {
+  background-color: #333;
+  color: #a2a2a2;
+}
+/* line 64, ../sass/base.scss */
+.reverse-contrast a {
+  color: #a2a2a2;
+}
+/* line 67, ../sass/base.scss */
+.reverse-contrast.reverse-contrast__base-1 {
+  background-color: #02203f;
+  color: white;
+}
+/* line 72, ../sass/base.scss */
+.reverse-contrast.reverse-contrast__base-1 label {
+  color: #b3ce00;
+}
+/* line 76, ../sass/base.scss */
+.reverse-contrast h1, .reverse-contrast h2, .reverse-contrast h3, .reverse-contrast h4, .reverse-contrast h5, .reverse-contrast h6 {
+  color: white;
+}
+/* line 81, ../sass/base.scss */
+.reverse-contrast .nav li a {
+  color: #a2a2a2;
+}
+/* line 83, ../sass/base.scss */
+.reverse-contrast .nav li a:hover {
+  color: white;
+}
+/* line 86, ../sass/base.scss */
+.reverse-contrast .nav li a:before {
+  background-color: #a2a2a2;
+}
+/* line 91, ../sass/base.scss */
+.reverse-contrast .nav li.active a {
+  color: white;
+}
+/* line 93, ../sass/base.scss */
+.reverse-contrast .nav li.active a:hover {
+  color: white;
+}
+
+/* line 101, ../sass/base.scss */
+.bgc-base-1 {
+  background-color: #02203f;
+}
+
+/* line 104, ../sass/base.scss */
+.text-white {
+  color: white !important;
+}
+
+/* line 107, ../sass/base.scss */
+.font-smaller {
+  font-size: 85%;
+}

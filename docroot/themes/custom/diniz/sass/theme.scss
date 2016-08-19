@@ -1,0 +1,17 @@
+/**
+ * @file theme.scss
+ *   Theme rules are similar to state rules in that they describe how modules
+ *   or layouts might look. Most sites don’t require a layer of theming but it
+ *   is good to be aware of it.
+ */
+
+@import "vars";
+@import "mixins";
+
+/**
+ * Overrides
+ */
+.flag:hover {
+  border: 1px solid transparent; // Flag sets this to 0 which BS doesn't like.
+}
+

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d1bf3b87237083e291b94d3cdd3d46ac",
-    "content-hash": "f0d210b5880ad1ad5a7e3c483d6bb03d",
+    "hash": "9a108306eaf350523d71198ed7b7be37",
+    "content-hash": "cc5f580b438466123bf79b783348896a",
     "packages": [
         {
             "name": "composer/installers",
@@ -653,37 +653,6 @@
             ],
             "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
             "time": "2016-05-25 21:59:48"
-        },
-        {
-            "name": "drupal-speedrun/diniz",
-            "version": "8.0.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal-speedrun/diniz.git",
-                "reference": "e1e82cb5b8f1e16c99940fe371cdbb85afdc062b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/drupal-speedrun/diniz/zipball/e1e82cb5b8f1e16c99940fe371cdbb85afdc062b",
-                "reference": "e1e82cb5b8f1e16c99940fe371cdbb85afdc062b",
-                "shasum": ""
-            },
-            "type": "drupal-theme",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Adam Balsam",
-                    "email": "balsam.adam@gmail.com"
-                }
-            ],
-            "description": "Bootstrap subtheme used in the DCDublin Speedrun Session.",
-            "support": {
-                "source": "https://github.com/drupal-speedrun/diniz/tree/8.0.x",
-                "issues": "https://github.com/drupal-speedrun/diniz/issues"
-            },
-            "time": "2016-08-05 15:14:38"
         },
         {
             "name": "drupal/acquia_connector",
@@ -6045,23 +6014,23 @@
         },
         {
             "name": "sebastian/environment",
-            "version": "1.3.7",
+            "version": "1.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "4e8f0da10ac5802913afc151413bc8c53b6c2716"
+                "reference": "be2c607e43ce4c89ecd60e75c6a85c126e754aea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/4e8f0da10ac5802913afc151413bc8c53b6c2716",
-                "reference": "4e8f0da10ac5802913afc151413bc8c53b6c2716",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/be2c607e43ce4c89ecd60e75c6a85c126e754aea",
+                "reference": "be2c607e43ce4c89ecd60e75c6a85c126e754aea",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": "^5.3.3 || ^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.4"
+                "phpunit/phpunit": "^4.8 || ^5.0"
             },
             "type": "library",
             "extra": {
@@ -6091,7 +6060,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2016-05-17 03:18:57"
+            "time": "2016-08-18 05:49:44"
         },
         {
             "name": "sebastian/exporter",
@@ -6621,7 +6590,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal-speedrun/diniz": 20,
         "drupal/flag": 20,
         "drupal/views_bootstrap": 20
     },

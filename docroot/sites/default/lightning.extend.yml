@@ -26,6 +26,6 @@ modules:
 
 # A system path to redirect to once installation is complete.
 redirect:
-  path: ''
+  path: '/pokedb-import'
   # Additional options to pass to the URL generator.
   options: { }
