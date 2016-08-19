@@ -29,7 +29,8 @@
         "drupal/migrate_plus": "^8.2.0",
         "drupal/migrate_tools": "^8.2.0",
         "drupal/bootstrap_layouts": "8.3.1",
-        "drupal/views_bootstrap": "8.3.x-dev#3a70ae46ffad42e53c628633e16c728557b422b6"
+        "drupal/views_bootstrap": "8.3.x-dev#3a70ae46ffad42e53c628633e16c728557b422b6",
+        "drupal/views_infinite_scroll": "8.1.2"
     },
     "repositories": [
         {

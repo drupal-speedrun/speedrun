@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: medium_square
+label: 'Medium Square'
+effects:
+  5c6325af-5814-40a5-9d13-6c6cd53285ba:
+    uuid: 5c6325af-5814-40a5-9d13-6c6cd53285ba
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 220
+      height: 220

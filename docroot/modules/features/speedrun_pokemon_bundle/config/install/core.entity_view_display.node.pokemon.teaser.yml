@@ -11,7 +11,7 @@ dependencies:
     - field.field.node.pokemon.field_species
     - field.field.node.pokemon.field_type
     - field.field.node.pokemon.field_weight
-    - image.style.medium
+    - image.style.medium_square
     - node.type.pokemon
   module:
     - image
@@ -33,7 +33,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: medium
+      image_style: medium_square
       image_link: content
     third_party_settings: {  }
   field_type:
@@ -41,7 +41,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
   flag_pokedex:
     weight: 10
