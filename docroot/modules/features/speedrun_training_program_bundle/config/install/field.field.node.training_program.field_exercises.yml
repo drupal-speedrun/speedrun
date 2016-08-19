@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exercises
+    - node.type.training_program
+  module:
+    - text
+id: node.training_program.field_exercises
+field_name: field_exercises
+entity_type: node
+bundle: training_program
+label: Exercises
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

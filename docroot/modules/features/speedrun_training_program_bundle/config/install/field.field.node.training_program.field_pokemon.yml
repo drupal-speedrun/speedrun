@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pokemon
+    - node.type.pokemon
+    - node.type.training_program
+id: node.training_program.field_pokemon
+field_name: field_pokemon
+entity_type: node
+bundle: training_program
+label: Pokemon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      pokemon: pokemon
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

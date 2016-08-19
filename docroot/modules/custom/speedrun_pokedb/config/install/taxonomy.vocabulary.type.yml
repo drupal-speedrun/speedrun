@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Type
+vid: type
+description: 'All Pokémon creatures are assigned certain types. Each type has several strengths and weaknesses in both attack and defense.'
+hierarchy: 0
+weight: 0

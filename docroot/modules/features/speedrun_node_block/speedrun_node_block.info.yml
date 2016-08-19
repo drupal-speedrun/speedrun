@@ -1,0 +1,9 @@
+name: 'Node Block'
+type: module
+core: 8.x
+dependencies:
+  - block_content
+  - field
+  - node
+  - speedrun_article_bundle
+package: Speedrun

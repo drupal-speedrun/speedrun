@@ -1,0 +1,17 @@
+name: 'Training Program'
+description: 'The Training Program bundle.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - file
+  - flag
+  - image
+  - menu_ui
+  - node
+  - path
+  - speedrun_pokemon_bundle
+  - text
+  - user
+  - workbench_moderation
+package: Speedrun
