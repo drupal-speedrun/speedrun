@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: media_reference_block
+label: 'Media Reference Block'
+revision: 1
+description: 'Renders one or more referenced Media Entities.'
