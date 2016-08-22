@@ -10,9 +10,9 @@ dependencies:
   - menu_ui
   - node
   - path
-  - speedrun_pokedex_flag
   - speedrun_pokemon_bundle
   - text
+  - training_program_bundle
   - user
   - views
   - workbench_moderation
