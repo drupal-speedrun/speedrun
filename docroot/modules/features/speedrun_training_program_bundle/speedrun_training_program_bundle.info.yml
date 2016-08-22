@@ -10,8 +10,10 @@ dependencies:
   - menu_ui
   - node
   - path
+  - speedrun_pokedex_flag
   - speedrun_pokemon_bundle
   - text
   - user
+  - views
   - workbench_moderation
 package: Speedrun

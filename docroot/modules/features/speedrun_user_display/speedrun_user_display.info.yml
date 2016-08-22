@@ -3,7 +3,6 @@ description: 'User display settings'
 type: module
 core: 8.x
 dependencies:
-  - image
   - panelizer
   - user
 version: 8.0.0

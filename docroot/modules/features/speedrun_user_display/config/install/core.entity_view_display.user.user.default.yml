@@ -1,8 +1,6 @@
 langcode: en
 status: true
 dependencies:
-  config:
-    - field.field.user.user.user_picture
   module:
     - panelizer
     - user
@@ -22,17 +20,28 @@ third_party_settings:
             label_display: visible
             views_label: ''
             items_per_page: none
-            region: middle
-            weight: 0
+            region: left
+            weight: -10
             uuid: e985969e-6735-4d38-b10c-ecc5f2db16b1
+            context_mapping: {  }
+          f4102f20-8a3b-4c43-8a21-5d68dbe6ae9d:
+            id: 'views_block:my_trainings-block_1'
+            label: ''
+            provider: views
+            label_display: visible
+            views_label: ''
+            items_per_page: none
+            region: right
+            weight: 0
+            uuid: f4102f20-8a3b-4c43-8a21-5d68dbe6ae9d
             context_mapping: {  }
         id: panels_variant
         uuid: 09dfec53-c66b-43db-8241-8d11ae481992
         label: Pokedex
         weight: 0
-        layout: onecol
+        layout: twocol
         layout_settings: {  }
-        page_title: null
+        page_title: ''
         storage_type: panelizer_default
         storage_id: 'user:user:default:default'
         builder: standard

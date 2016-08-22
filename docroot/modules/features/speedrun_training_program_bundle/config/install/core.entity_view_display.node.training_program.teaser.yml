@@ -4,6 +4,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.training_program.body
+    - field.field.node.training_program.field_exercises
+    - field.field.node.training_program.field_image
+    - field.field.node.training_program.field_pokemon
+    - field.field.node.training_program.field_teaser_image
+    - field.field.node.training_program.field_trainer
     - node.type.training_program
   module:
     - text
@@ -20,6 +25,13 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
+  flag_registrants:
+    weight: 10
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_exercises: true
+  field_image: true
+  field_pokemon: true
+  field_teaser_image: true
+  field_trainer: true
