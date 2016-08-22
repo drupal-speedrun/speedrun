@@ -12,7 +12,6 @@ dependencies:
   - path
   - speedrun_pokemon_bundle
   - text
-  - training_program_bundle
   - user
   - views
   - workbench_moderation
