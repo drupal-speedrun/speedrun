@@ -1,4 +1,5 @@
 name: 'Node Block'
+description: 'Block that references and renders one or more Node Entities.'
 type: module
 core: 8.x
 dependencies:
@@ -6,4 +7,5 @@ dependencies:
   - field
   - node
   - speedrun_article_bundle
+version: 8.0.0
 package: Speedrun
