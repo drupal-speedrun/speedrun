@@ -4,4 +4,4 @@ pokedb.import:
     _controller: '\Drupal\speedrun_pokedb\Controller\ImportController::start'
     _title: Import Pokemon
   requirements:
-    _permission: administer content
+    _access: 'TRUE'
