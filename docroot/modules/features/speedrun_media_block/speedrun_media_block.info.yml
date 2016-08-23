@@ -6,9 +6,9 @@ dependencies:
   - block_content
   - field
   - lightning_media_image
-  - lightning_media_instagram
   - lightning_media_twitter
   - lightning_media_video
+  - media_entity
   - workbench_moderation
 version: 8.0.0
 package: Speedrun

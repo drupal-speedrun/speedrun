@@ -2,19 +2,18 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.media_reference_block
+    - block_content.type.media_block
     - field.storage.block_content.field_media_entity_reference
     - media_entity.bundle.image
-    - media_entity.bundle.instagram
     - media_entity.bundle.tweet
     - media_entity.bundle.video
-id: block_content.media_reference_block.field_media_entity_reference
+id: block_content.media_block.field_media_entity_reference
 field_name: field_media_entity_reference
 entity_type: block_content
-bundle: media_reference_block
+bundle: media_block
 label: 'Media Entity Reference'
-description: 'Enter the media entities to be rendered.'
-required: false
+description: 'Select the media entities to rendered.'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -23,12 +22,10 @@ settings:
   handler_settings:
     target_bundles:
       image: image
-      instagram: instagram
       tweet: tweet
       video: video
     sort:
-      field: name
-      direction: ASC
+      field: _none
     auto_create: false
     auto_create_bundle: image
 field_type: entity_reference

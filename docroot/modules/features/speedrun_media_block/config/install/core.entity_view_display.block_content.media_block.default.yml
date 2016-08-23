@@ -2,11 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.media_reference_block
-    - field.field.block_content.media_reference_block.field_media_entity_reference
-id: block_content.media_reference_block.default
+    - block_content.type.media_block
+    - field.field.block_content.media_block.field_media_entity_reference
+id: block_content.media_block.default
 targetEntityType: block_content
-bundle: media_reference_block
+bundle: media_block
 mode: default
 content:
   field_media_entity_reference:
