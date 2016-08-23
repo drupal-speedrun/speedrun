@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_pokemon_enthusiast_since_y
+  module:
+    - datetime
+    - user
+id: user.user.field_pokemon_enthusiast_since_y
+field_name: field_pokemon_enthusiast_since_y
+entity_type: user
+bundle: user
+label: 'Pokemon enthusiast since'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

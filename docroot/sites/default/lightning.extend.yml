@@ -24,6 +24,9 @@ modules:
   - speedrun_article_bundle
   - speedrun_pokedb
   - speedrun_training_program_bundle
+  - speedrun_event_bundle
+  - speedrun_media_block
+  - speedrun_node_block
 
 # A system path to redirect to once installation is complete.
 redirect:

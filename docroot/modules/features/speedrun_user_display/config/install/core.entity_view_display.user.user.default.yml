@@ -1,7 +1,12 @@
 langcode: en
 status: true
 dependencies:
+  config:
+    - field.field.user.user.field_picture
+    - field.field.user.user.field_pokemon_enthusiast_since_y
   module:
+    - datetime
+    - image
     - panelizer
     - user
 third_party_settings:
@@ -20,8 +25,8 @@ third_party_settings:
             label_display: visible
             views_label: ''
             items_per_page: none
-            region: left
-            weight: -10
+            region: bottom
+            weight: -1
             uuid: e985969e-6735-4d38-b10c-ecc5f2db16b1
             context_mapping: {  }
           f4102f20-8a3b-4c43-8a21-5d68dbe6ae9d:
@@ -35,13 +40,49 @@ third_party_settings:
             weight: 0
             uuid: f4102f20-8a3b-4c43-8a21-5d68dbe6ae9d
             context_mapping: {  }
+          3cbbbe9c-37b5-4e87-9287-c6795f8a1de6:
+            id: 'entity_field:user:field_pokemon_enthusiast_since_y'
+            label: 'Pokemon enthusiast since'
+            provider: ctools_block
+            label_display: visible
+            formatter:
+              label: above
+              type: datetime_default
+              settings:
+                timezone_override: ''
+                format_type: html_year
+              third_party_settings: {  }
+              weight: 0
+            region: left
+            weight: -9
+            uuid: 3cbbbe9c-37b5-4e87-9287-c6795f8a1de6
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          7f80d5ef-8b72-4c28-81b6-9b8b9569969d:
+            id: 'entity_field:user:field_picture'
+            label: Picture
+            provider: ctools_block
+            label_display: visible
+            formatter:
+              label: hidden
+              type: image
+              settings:
+                image_style: medium_square
+                image_link: ''
+              third_party_settings: {  }
+              weight: 0
+            region: left
+            weight: -10
+            uuid: 7f80d5ef-8b72-4c28-81b6-9b8b9569969d
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
         id: panels_variant
         uuid: 09dfec53-c66b-43db-8241-8d11ae481992
         label: Pokedex
         weight: 0
-        layout: twocol
+        layout: twocol_stacked
         layout_settings: {  }
-        page_title: ''
+        page_title: '[user:name]'
         storage_type: panelizer_default
         storage_id: 'user:user:default:default'
         builder: standard
@@ -52,6 +93,22 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
+  field_picture:
+    weight: 6
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_pokemon_enthusiast_since_y:
+    weight: 7
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
   member_for:
     weight: 5
     settings: {  }
