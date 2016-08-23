@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_picture
-    - field.field.user.user.field_pokemon_enthusiast_since_y
+    - field.field.user.user.field_pokemon_enthusiast_since
   module:
     - datetime
     - image
@@ -29,19 +29,8 @@ third_party_settings:
             weight: -1
             uuid: e985969e-6735-4d38-b10c-ecc5f2db16b1
             context_mapping: {  }
-          f4102f20-8a3b-4c43-8a21-5d68dbe6ae9d:
-            id: 'views_block:my_trainings-block_1'
-            label: ''
-            provider: views
-            label_display: visible
-            views_label: ''
-            items_per_page: none
-            region: right
-            weight: 0
-            uuid: f4102f20-8a3b-4c43-8a21-5d68dbe6ae9d
-            context_mapping: {  }
-          3cbbbe9c-37b5-4e87-9287-c6795f8a1de6:
-            id: 'entity_field:user:field_pokemon_enthusiast_since_y'
+          116906ee-38ba-49d2-ab2e-56ed21963d0d:
+            id: 'entity_field:user:field_pokemon_enthusiast_since'
             label: 'Pokemon enthusiast since'
             provider: ctools_block
             label_display: visible
@@ -54,11 +43,11 @@ third_party_settings:
               third_party_settings: {  }
               weight: 0
             region: left
-            weight: -9
-            uuid: 3cbbbe9c-37b5-4e87-9287-c6795f8a1de6
+            weight: 0
+            uuid: 116906ee-38ba-49d2-ab2e-56ed21963d0d
             context_mapping:
               entity: '@panelizer.entity_context:entity'
-          7f80d5ef-8b72-4c28-81b6-9b8b9569969d:
+          1894d603-5340-48e1-9fa4-edde4ebf5a51:
             id: 'entity_field:user:field_picture'
             label: Picture
             provider: ctools_block
@@ -72,10 +61,21 @@ third_party_settings:
               third_party_settings: {  }
               weight: 0
             region: left
-            weight: -10
-            uuid: 7f80d5ef-8b72-4c28-81b6-9b8b9569969d
+            weight: 0
+            uuid: 1894d603-5340-48e1-9fa4-edde4ebf5a51
             context_mapping:
               entity: '@panelizer.entity_context:entity'
+          f877456b-277b-4553-95d5-a418b183c142:
+            id: 'views_block:my_trainings-block_1'
+            label: ''
+            provider: views
+            label_display: visible
+            views_label: ''
+            items_per_page: none
+            region: right
+            weight: 0
+            uuid: f877456b-277b-4553-95d5-a418b183c142
+            context_mapping: {  }
         id: panels_variant
         uuid: 09dfec53-c66b-43db-8241-8d11ae481992
         label: Pokedex
@@ -94,13 +94,21 @@ bundle: user
 mode: default
 content:
   field_picture:
-    weight: 6
+    weight: 8
     label: above
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
+  field_pokemon_enthusiast_since:
+    weight: 9
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
   field_pokemon_enthusiast_since_y:
     weight: 7
     label: above

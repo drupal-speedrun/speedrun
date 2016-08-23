@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_picture
-    - field.field.user.user.field_pokemon_enthusiast_since_y
+    - field.field.user.user.field_pokemon_enthusiast_since
     - image.style.thumbnail
   module:
     - datetime
@@ -19,12 +19,20 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_picture:
-    weight: 7
+    weight: 9
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+  field_pokemon_enthusiast_since:
+    weight: 10
+    settings:
+      increment: 15
+      date_order: YMD
+      time_type: '24'
+    third_party_settings: {  }
+    type: datetime_datelist
   field_pokemon_enthusiast_since_y:
     weight: 8
     settings:

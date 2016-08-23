@@ -3,6 +3,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_picture
+    - field.field.user.user.field_pokemon_enthusiast_since
   module:
     - user
 id: user.user.compact
@@ -19,4 +21,6 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
+  field_picture: true
+  field_pokemon_enthusiast_since: true
   member_for: true
