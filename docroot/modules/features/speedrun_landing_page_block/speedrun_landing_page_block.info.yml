@@ -1,0 +1,14 @@
+name: 'Landing Page Block'
+description: 'Landing page block and its fields.'
+type: module
+core: 8.x
+dependencies:
+  - block_content
+  - entity_browser
+  - field
+  - file
+  - image
+  - text
+  - workbench_moderation
+version: 8.0.0
+package: Speedrun

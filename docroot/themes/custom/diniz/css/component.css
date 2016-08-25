@@ -6,3 +6,8 @@
 /**
  * Columns
  */
+/* line 10, ../sass/component.scss */
+.background-cover {
+  background-size: cover;
+  background-position: center center;
+}

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: landing_page_block
+label: 'Landing Page Block'
+revision: 1
+description: 'Block type with a title and body plus additional fields for background image and other settings that can be used in constructing Landing Pages.'

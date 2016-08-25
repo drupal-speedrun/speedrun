@@ -1,0 +1,62 @@
+{#
+/**
+ * @file
+ * Different classes and containers for landing page blocks.
+ */
+#}
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    'clearfix',
+    'col-lg-' ~ lg_columns,
+    'col-lg-offset-' ~lg_offset,
+  ]
+%}
+
+{% if lp_block %}
+  {# Landing Page Block #}
+  {% if background_image %}
+    {# With a background image #}
+    <div class="background-cover jumbotron" style="background-image: url({{ background_image }})">
+      <div class="container">
+        <div class="row">
+          <section{{ attributes.addClass(classes) }}>
+            {{ title_prefix }}
+            {% if label %}
+              <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
+            {% endif %}
+            {{ title_suffix }}
+            {{ content }}
+          </section>
+        </div>
+      </div>
+    </div>
+  {% else %}
+    {# Landing page block without background image #}
+    <div class="container">
+      <div class="row">
+        <section{{ attributes.addClass(classes) }}>
+          {{ title_prefix }}
+          {% if label %}
+            <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
+          {% endif %}
+          {{ title_suffix }}
+          {{ content }}
+        </section>
+      </div>
+    </div>
+  {% endif %}
+{% else %}
+  {# Regular block #}
+  <section{{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+    {% if label %}
+      <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
+    {% endif %}
+    {{ title_suffix }}
+
+      {{ content }}
+  </section>
+{% endif %}

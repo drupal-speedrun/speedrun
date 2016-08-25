@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.landing_page_block
+    - field.field.block_content.landing_page_block.body
+    - field.field.block_content.landing_page_block.field_background_image
+    - field.field.block_content.landing_page_block.field_column
+    - field.field.block_content.landing_page_block.field_content_width
+    - field.field.block_content.landing_page_block.field_offset
+  module:
+    - text
+id: block_content.landing_page_block.default
+targetEntityType: block_content
+bundle: landing_page_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_column:
+    type: text_default
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_background_image: true
+  field_content_width: true
+  field_offset: true

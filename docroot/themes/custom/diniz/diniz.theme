@@ -5,3 +5,35 @@
  *
  * Place your custom PHP code in this file.
  */
+
+/**
+ * Implements template_preprocess_page().
+ */
+function diniz_preprocess_page(&$variables) {
+  if (isset($variables['node'])) {
+    if ($variables['node']->bundle() == 'landing_page') {
+      // Move landing page content into the containerless region.
+      $variables['page']['containerless']['diniz_content'] = $variables['page']['content']['diniz_content'];
+      unset($variables['page']['content']['diniz_content']);
+    }
+  }
+}
+
+/**
+ * Implements template_preprocess_block().
+ */
+function diniz_preprocess_block(&$variables) {
+  $variables['lg_columns'] = 12;
+  $variables['lg_offset'] = 0;
+  $variables['lp_block'] = FALSE;
+  if (isset($variables['content']['#block_content'])) {
+    if ($variables['content']['#block_content']->bundle() == 'landing_page_block') {
+      $variables['lp_block'] = TRUE;
+      if (isset($variables['content']['#block_content']->field_background_image->entity)) {
+        $variables['background_image'] = file_create_url($variables['content']['#block_content']->field_background_image->entity->getFileUri());
+      }
+      $variables['lg_columns'] = $variables['content']['#block_content']->field_content_width->value;
+      $variables['lg_offset'] = $variables['content']['#block_content']->field_offset->value;
+    }
+  }
+}

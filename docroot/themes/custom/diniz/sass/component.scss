@@ -6,3 +6,8 @@
 
 @import "vars";
 @import "mixins";
+
+.background-cover {
+  background-size: cover;
+  background-position: center center;
+}

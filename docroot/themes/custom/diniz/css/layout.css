@@ -63,3 +63,31 @@
 article.panel:last-child {
   margin-bottom: 30px;
 }
+
+/* line 59, ../sass/layout.scss */
+.flex-container {
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+@media (min-width: 1200px) {
+  /* line 59, ../sass/layout.scss */
+  .flex-container {
+    flex-wrap: nowrap;
+  }
+}
+
+/* line 68, ../sass/layout.scss */
+.flex-item {
+  flex: 1;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+/* line 72, ../sass/layout.scss */
+.flex-item:first-child {
+  margin-left: 0;
+}
+/* line 75, ../sass/layout.scss */
+.flex-item:last-child {
+  margin-right: 0;
+}

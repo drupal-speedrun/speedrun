@@ -54,3 +54,25 @@
 article.panel:last-child {
   margin-bottom: 30px;
 }
+
+// Basic support for flexbox
+.flex-container {
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  @media (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.flex-item {
+  flex: 1;
+  margin-left: 15px;
+  margin-right: 15px;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}

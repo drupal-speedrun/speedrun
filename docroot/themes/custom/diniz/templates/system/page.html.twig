@@ -172,6 +172,14 @@
   </div>
 {% endblock %}
 
+{% if page.containerless %}
+  {% block containerless %}
+    <div class="containerless">
+      {{ page.containerless }}
+    </div>
+  {% endblock %}
+{% endif %}
+
 {% if page.footer %}
   {% block footer %}
     <footer class="footer {{ container }}" role="contentinfo">
