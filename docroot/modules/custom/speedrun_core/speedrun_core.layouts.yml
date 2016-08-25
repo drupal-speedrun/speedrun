@@ -1,0 +1,14 @@
+stripey_stacked:
+  label: Stripey Stacked
+  category: Speedrun
+  path: layouts/stripey_stacked
+  template: stripey-stacked
+  regions:
+    top:
+      label: Top (containerless)
+    left:
+      label: Left (6 columns)
+    right:
+      label: Right (6 columns)
+    bottom:
+      label: Bottom (containerless)
