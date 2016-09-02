@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * Implements hook_layout_alter().
+ */
+function speedrun_layout_layout_alter(array &$definitions) {
+  $category_map = [
+    'Columns: 1' => 'Unsupported',
+    'Columns: 2' => 'Unsupported',
+    'Columns: 3' => 'Unsupported',
+  ];
+
+  foreach ($definitions as $key => $info) {
+    $category = $info['category'];
+    if ($category instanceof \Drupal\Core\StringTranslation\TranslatableMarkup) {
+      $category = $category->getUntranslatedString();
+    }
+
+    if (isset($category_map[$category])) {
+      $definitions[$key]['category'] = t($category_map[$category]);
+    }
+  }
+}

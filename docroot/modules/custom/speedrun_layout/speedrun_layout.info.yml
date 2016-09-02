@@ -1,0 +1,5 @@
+name: 'Speedrun Layout'
+type: module
+description: 'Custom layouts and config for speedrun'
+package: 'Speedrun'
+core: 8.x

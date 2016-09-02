@@ -3,6 +3,7 @@ stripey_stacked:
   category: Speedrun
   path: layouts/stripey_stacked
   template: stripey-stacked
+  icon: stripey-stacked.png
   regions:
     top:
       label: Top (containerless)
