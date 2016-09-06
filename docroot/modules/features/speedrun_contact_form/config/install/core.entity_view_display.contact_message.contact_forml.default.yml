@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_forml
+    - field.field.contact_message.contact_forml.field_phone_number
+id: contact_message.contact_forml.default
+targetEntityType: contact_message
+bundle: contact_forml
+mode: default
+content:
+  field_phone_number:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  message:
+    type: string
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

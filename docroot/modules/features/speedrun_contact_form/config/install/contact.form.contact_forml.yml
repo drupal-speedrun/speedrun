@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: contact_forml
+label: 'Contact Form'
+recipients:
+  - root@localhost
+reply: ''
+weight: 0
