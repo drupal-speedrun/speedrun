@@ -4,8 +4,10 @@ type: module
 core: 8.x
 dependencies:
   - field
+  - lightning_layout
   - menu_ui
   - node
+  - panelizer
   - path
   - text
   - user

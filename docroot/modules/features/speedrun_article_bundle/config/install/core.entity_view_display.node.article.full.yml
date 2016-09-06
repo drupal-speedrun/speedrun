@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.article.body
     - field.field.node.article.field_blog
     - field.field.node.article.panelizer
@@ -12,9 +13,9 @@ dependencies:
     - user
 third_party_settings:
   panelizer:
-    enable: false
+    enable: true
     custom: false
-    allow: false
+    allow: true
     default: default
     displays:
       default:
@@ -100,10 +101,76 @@ third_party_settings:
         storage_id: ''
         builder: ipe
         pattern: panelizer
-id: node.article.default
+      blog:
+        blocks:
+          dc91b4f3-c074-42c9-9faf-ff45418f626d:
+            id: 'entity_field:node:uid'
+            label: 'Authored by'
+            provider: ctools_block
+            label_display: visible
+            formatter:
+              label: above
+              type: entity_reference_label
+              settings:
+                link: true
+              third_party_settings: {  }
+              weight: 0
+            region: sidebar_right
+            weight: 0
+            uuid: dc91b4f3-c074-42c9-9faf-ff45418f626d
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          ffe290a0-fa00-4610-ad74-08a692e061ac:
+            id: 'entity_field:node:created'
+            label: 'Authored on'
+            provider: ctools_block
+            label_display: visible
+            formatter:
+              label: above
+              type: timestamp
+              settings:
+                date_format: medium
+                custom_date_format: ''
+                timezone: ''
+              third_party_settings: {  }
+              weight: 0
+            region: sidebar_right
+            weight: 0
+            uuid: ffe290a0-fa00-4610-ad74-08a692e061ac
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          ce70fd9b-b118-447d-a0fb-72db58a557c0:
+            id: 'entity_field:node:body'
+            label: Body
+            provider: ctools_block
+            label_display: visible
+            formatter:
+              label: above
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            region: sidebar_right
+            weight: 0
+            uuid: ce70fd9b-b118-447d-a0fb-72db58a557c0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+        id: panels_variant
+        uuid: 62b4ae2f-2ce0-416e-a7f5-89df37ae9703
+        label: Blog
+        weight: 0
+        layout: booststrap-9-3
+        layout_settings: {  }
+        page_title: ''
+        storage_type: panelizer_default
+        storage_id: 'node:article:full:blog'
+        pattern: panelizer
+        builder: ipe
+        static_context: {  }
+id: node.article.full
 targetEntityType: node
 bundle: article
-mode: default
+mode: full
 content:
   body:
     weight: 101
@@ -122,7 +189,11 @@ content:
     type: boolean
   links:
     weight: 100
+    settings: {  }
+    third_party_settings: {  }
   workbench_moderation_control:
     weight: -20
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   panelizer: true
