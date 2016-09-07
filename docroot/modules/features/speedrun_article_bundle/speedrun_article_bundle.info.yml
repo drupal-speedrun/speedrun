@@ -4,11 +4,13 @@ type: module
 core: 8.x
 dependencies:
   - field
+  - image
   - lightning_layout
   - menu_ui
   - node
   - panelizer
   - path
+  - speedrun_pokemon_bundle
   - text
   - user
   - views

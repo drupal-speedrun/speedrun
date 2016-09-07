@@ -4,8 +4,12 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.field_blog
+    - field.field.node.article.field_image
+    - field.field.node.article.panelizer
+    - image.style.thumbnail
     - node.type.article
   module:
+    - image
     - path
     - text
     - workbench_moderation
@@ -33,6 +37,18 @@ content:
       display_label: false
     third_party_settings: {  }
     type: boolean_checkbox
+  field_image:
+    type: entity_browser_file
+    weight: 33
+    settings:
+      entity_browser: image_browser
+      field_widget_edit: true
+      field_widget_remove: true
+      view_mode: default
+      preview_image_style: thumbnail
+      open: true
+      selection_mode: append
+    third_party_settings: {  }
   path:
     type: path
     weight: 30
@@ -65,4 +81,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  panelizer: true
