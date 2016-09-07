@@ -12,10 +12,60 @@ dependencies:
     - user
 third_party_settings:
   panelizer:
-    enable: false
+    enable: true
     custom: false
     allow: false
     default: default
+    displays:
+      default:
+        blocks:
+          d18fee05-905e-4f26-bef6-3b4c75fa244f:
+            id: 'entity_field:user:field_picture'
+            label: Picture
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: image
+              settings:
+                image_style: thumbnail
+                image_link: content
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: d18fee05-905e-4f26-bef6-3b4c75fa244f
+          054c5646-d62b-4cca-b9c5-d97550f34c7a:
+            id: 'entity_field:user:name'
+            label: Name
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: user_name
+              settings:
+                link_to_entity: true
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 1
+            uuid: 054c5646-d62b-4cca-b9c5-d97550f34c7a
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+        id: panels_variant
+        uuid: c79b3793-22e2-4f89-a146-f8f10003c8e3
+        label: Default
+        weight: 0
+        layout: onecol
+        layout_settings: {  }
+        page_title: ''
+        storage_type: panelizer_default
+        storage_id: 'user:user:compact:default'
+        builder: ipe
+        pattern: panelizer
+        static_context: {  }
 id: user.user.compact
 targetEntityType: user
 bundle: user
