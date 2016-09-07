@@ -8,6 +8,7 @@ dependencies:
     - field.field.block_content.landing_page_block.field_column
     - field.field.block_content.landing_page_block.field_content_width
     - field.field.block_content.landing_page_block.field_offset
+    - field.field.block_content.landing_page_block.field_user_reference
   module:
     - entity_browser
     - text
@@ -27,7 +28,7 @@ content:
     third_party_settings: {  }
   field_background_image:
     type: entity_browser_file
-    weight: 3
+    weight: 4
     settings:
       entity_browser: image_browser
       field_widget_edit: true
@@ -45,17 +46,25 @@ content:
     third_party_settings: {  }
     type: text_textarea
   field_content_width:
-    weight: 4
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: number
-  field_offset:
     weight: 5
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
+  field_offset:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+  field_user_reference:
+    type: entity_reference_autocomplete_tags
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   info:
     type: string_textfield
     weight: 0
