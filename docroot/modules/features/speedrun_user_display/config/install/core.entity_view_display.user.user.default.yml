@@ -33,7 +33,7 @@ third_party_settings:
             id: 'entity_field:user:field_pokemon_enthusiast_since'
             label: 'Pokemon enthusiast since'
             provider: ctools_block
-            label_display: visible
+            label_display: '0'
             formatter:
               label: above
               type: datetime_default
@@ -51,7 +51,7 @@ third_party_settings:
             id: 'entity_field:user:field_picture'
             label: Picture
             provider: ctools_block
-            label_display: visible
+            label_display: '0'
             formatter:
               label: hidden
               type: image
