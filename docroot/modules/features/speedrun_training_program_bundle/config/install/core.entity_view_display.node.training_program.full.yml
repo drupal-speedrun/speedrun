@@ -1,0 +1,242 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.training_program.body
+    - field.field.node.training_program.field_exercises
+    - field.field.node.training_program.field_image
+    - field.field.node.training_program.field_pokemon
+    - field.field.node.training_program.field_teaser_image
+    - field.field.node.training_program.field_trainer
+    - field.field.node.training_program.panelizer
+    - node.type.training_program
+  module:
+    - image
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: true
+    custom: false
+    allow: true
+    default: default
+    displays:
+      default:
+        blocks:
+          da2aa47e-6364-4b46-825a-fdc9b636aa3a:
+            id: 'entity_field:node:body'
+            label: Description
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -3
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: da2aa47e-6364-4b46-825a-fdc9b636aa3a
+          ab96bdeb-86c2-4b0f-b287-d0b273f16263:
+            id: 'entity_field:node:field_exercises'
+            label: Exercises
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            region: bottom
+            weight: -3
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: ab96bdeb-86c2-4b0f-b287-d0b273f16263
+          20c2e225-40c5-4f69-a8f1-193007b10ca6:
+            id: 'entity_field:node:field_pokemon'
+            label: Pokemon
+            provider: ctools_block
+            label_display: visible
+            formatter:
+              label: hidden
+              type: entity_reference_entity_view
+              settings:
+                view_mode: teaser
+              third_party_settings: {  }
+              weight: 0
+            region: right_above
+            weight: -3
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 20c2e225-40c5-4f69-a8f1-193007b10ca6
+          8d3d9ef6-6e72-4b4c-8baf-8464cd6cf420:
+            id: 'entity_field:node:field_trainer'
+            label: Trainer
+            provider: ctools_block
+            label_display: visible
+            formatter:
+              label: hidden
+              type: entity_reference_entity_view
+              settings:
+                view_mode: compact
+              third_party_settings: {  }
+              weight: 0
+            region: left_above
+            weight: -3
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 8d3d9ef6-6e72-4b4c-8baf-8464cd6cf420
+        id: panels_variant
+        label: Default
+        uuid: 920f1cf6-b4a8-4073-890e-e1c600b9a03b
+        weight: 0
+        layout: twocol_bricks
+        layout_settings: {  }
+        page_title: ''
+        storage_type: panelizer_default
+        storage_id: 'node:training_program:full:default'
+        builder: ipe
+        pattern: panelizer
+        static_context: {  }
+      training_2:
+        blocks:
+          3959b5f2-33b6-48a9-8c91-f2f2d08d0b01:
+            id: 'entity_field:node:body'
+            label: Body
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            region: sidebar_right
+            weight: -10
+            uuid: 3959b5f2-33b6-48a9-8c91-f2f2d08d0b01
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          5f0e34a5-6a09-4fad-8d3a-9cc932917b1f:
+            id: 'entity_field:node:field_exercises'
+            label: Exercises
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            region: sidebar_right
+            weight: -9
+            uuid: 5f0e34a5-6a09-4fad-8d3a-9cc932917b1f
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          7916b623-9ae5-4dff-b7c9-af64103ac748:
+            id: 'entity_field:node:field_trainer'
+            label: Trainer
+            provider: ctools_block
+            label_display: visible
+            formatter:
+              label: hidden
+              type: entity_reference_entity_view
+              settings:
+                view_mode: compact
+              third_party_settings: {  }
+              weight: 0
+            region: sidebar_left
+            weight: -1
+            uuid: 7916b623-9ae5-4dff-b7c9-af64103ac748
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          474a3cbc-a66d-4a28-8377-c4ffad3f0756:
+            id: 'entity_field:node:field_pokemon'
+            label: Pokemon
+            provider: ctools_block
+            label_display: visible
+            formatter:
+              label: hidden
+              type: entity_reference_entity_view
+              settings:
+                view_mode: teaser
+              third_party_settings: {  }
+              weight: 0
+            region: sidebar_left
+            weight: 0
+            uuid: 474a3cbc-a66d-4a28-8377-c4ffad3f0756
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+        id: panels_variant
+        uuid: 1edaf851-ff3c-4014-8449-ab18e9cca885
+        label: 'Training 2'
+        weight: 0
+        layout: booststrap-9-3
+        layout_settings: {  }
+        page_title: ''
+        storage_type: panelizer_default
+        storage_id: 'node:training_program:full:training_2'
+        pattern: panelizer
+        builder: ipe
+        static_context: {  }
+id: node.training_program.full
+targetEntityType: node
+bundle: training_program
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_exercises:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_image:
+    weight: 104
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_pokemon:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_teaser_image:
+    weight: 105
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_trainer:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  flag_registrants:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  panelizer: true

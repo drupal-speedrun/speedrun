@@ -11,8 +11,15 @@ dependencies:
     - node.type.training_program
   module:
     - image
+    - panelizer
     - text
     - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
 id: node.training_program.default
 targetEntityType: node
 bundle: training_program
@@ -62,6 +69,10 @@ content:
     type: entity_reference_label
   flag_registrants:
     weight: 10
+    settings: {  }
+    third_party_settings: {  }
   links:
     weight: 100
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

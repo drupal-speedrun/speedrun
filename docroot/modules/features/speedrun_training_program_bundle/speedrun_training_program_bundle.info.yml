@@ -7,8 +7,10 @@ dependencies:
   - file
   - flag
   - image
+  - lightning_layout
   - menu_ui
   - node
+  - panelizer
   - path
   - speedrun_pokemon_bundle
   - text
