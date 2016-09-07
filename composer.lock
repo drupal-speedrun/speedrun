@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9a108306eaf350523d71198ed7b7be37",
-    "content-hash": "cc5f580b438466123bf79b783348896a",
+    "hash": "804917139b98d7f5feaedcea265b9f32",
+    "content-hash": "42afba5abb3e536e5741288a9c3bec68",
     "packages": [
         {
             "name": "composer/installers",
@@ -670,7 +670,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/acquia_connector-8.x-1.4.zip",
-                "reference": null,
+                "reference": "36f7bebc88b4c18af5aa23d5fd8555839b6c7af9",
                 "shasum": null
             },
             "require": {
@@ -1302,6 +1302,37 @@
             "time": "2016-08-27 19:30:36"
         },
         {
+            "name": "drupal/formblock",
+            "version": "8.1.0-beta9",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/formblock",
+                "reference": "1f5f0d498fbfe1af3d15612d82c63a427ebf3087"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/formblock-8.x-1.0-beta9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Enables the presentation of node creation forms in blocks. This is particularly useful for including forms on panels.",
+            "homepage": "https://www.drupal.org/project/formblock",
+            "time": "2016-08-18 20:21:47"
+        },
+        {
             "name": "drupal/inline_entity_form",
             "version": "8.1.0-alpha6",
             "source": {
@@ -1579,7 +1610,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/media_entity-8.x-1.4.zip",
-                "reference": null,
+                "reference": "41e74fd385fcfc535a6b4ddb2a9f9b105be2f137",
                 "shasum": null
             },
             "require": {
@@ -1761,7 +1792,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.0-beta10.zip",
-                "reference": null,
+                "reference": "c0610ad2ad9318298823c24db66b8769095910a3",
                 "shasum": null
             },
             "require": {
