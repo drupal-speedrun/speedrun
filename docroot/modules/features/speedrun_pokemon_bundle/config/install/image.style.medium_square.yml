@@ -4,8 +4,8 @@ dependencies: {  }
 name: medium_square
 label: 'Medium Square'
 effects:
-  5c6325af-5814-40a5-9d13-6c6cd53285ba:
-    uuid: 5c6325af-5814-40a5-9d13-6c6cd53285ba
+  ffb8f938-3287-4aae-8d7b-5fd6ea553560:
+    uuid: ffb8f938-3287-4aae-8d7b-5fd6ea553560
     id: image_scale_and_crop
     weight: 1
     data:
