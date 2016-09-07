@@ -13,3 +13,18 @@ stripey_stacked:
       label: Right (6 columns)
     bottom:
       label: Bottom (containerless)
+nine_three_stacked:
+  label: 9/3 Stacked
+  category: Speedrun
+  path: layouts/nine_three_stacked
+  template: nine-three-stacked
+  icon: nine-three-stacked.png
+  regions:
+    top:
+      label: Top (containerless)
+    left:
+      label: Left (9 columns)
+    right:
+      label: Right (3 columns)
+    bottom:
+      label: Bottom (containerless)
