@@ -9,9 +9,12 @@
  *
  * @see system_install()
  */
-
 function speedrun_core_install() {
-  // Enable and set acmebootstrap as default theme
-  \Drupal::service('theme_installer')->install(array('diniz'), TRUE);
-  \Drupal::configFactory()->getEditable('system.theme')->set('default', 'diniz')->save(TRUE);
+  // Enable and set diniz as default theme.
+  \Drupal::service('theme_installer')->install(['diniz']);
+
+  \Drupal::configFactory()
+    ->getEditable('system.theme')
+    ->set('default', 'diniz')
+    ->save(TRUE);
 }

@@ -1,7 +1,0 @@
-<?php
-
-/**
- * Implements hook_layout_alter().
- */
-function speedrun_core_layout_alter(array &$definitions) {
-}
