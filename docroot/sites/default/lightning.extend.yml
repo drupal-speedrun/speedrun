@@ -30,6 +30,7 @@ modules:
   - speedrun_media_block
   - speedrun_node_block
   - speedrun_landing_page_block
+  - speedrun_contact_form
 
 # A system path to redirect to once installation is complete.
 redirect:
