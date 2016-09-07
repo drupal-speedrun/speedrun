@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function speedrun_contact_form_install() {
+  $permissions = ['access site-wide contact form'];
+
+  user_role_grant_permissions('anonymous', $permissions);
+  user_role_grant_permissions('authenticated', $permissions);
+}
