@@ -1,0 +1,25 @@
+<?php
+
+use Drupal\field\Entity\FieldConfig;
+use Drupal\file\Entity\File;
+
+/**
+ * Implements hook_install().
+ */
+function speedrun_user_display_install() {
+  $uri = 'public://pokeball.jpg';
+  $copied = file_unmanaged_copy(__DIR__ . '/pokeball.jpg', $uri, FILE_EXISTS_REPLACE);
+  if ($copied) {
+    $file = File::create([
+      'filename' => 'pokeball.jpg',
+      'uri' => $uri,
+    ]);
+    $file->save();
+
+    FieldConfig::load('user.user.field_picture')
+      ->setSetting('default_image', [
+        'uuid' => $file->uuid(),
+      ])
+      ->save();
+  }
+}
