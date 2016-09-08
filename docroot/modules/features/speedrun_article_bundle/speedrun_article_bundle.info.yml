@@ -3,6 +3,7 @@ description: 'The Article Node Bundle.'
 type: module
 core: 8.x
 dependencies:
+  - entity_browser
   - field
   - image
   - lightning_layout

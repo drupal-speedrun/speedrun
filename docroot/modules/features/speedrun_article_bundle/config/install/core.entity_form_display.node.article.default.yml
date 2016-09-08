@@ -6,10 +6,9 @@ dependencies:
     - field.field.node.article.field_blog
     - field.field.node.article.field_image
     - field.field.node.article.panelizer
-    - image.style.thumbnail
     - node.type.article
   module:
-    - image
+    - entity_browser
     - path
     - text
     - workbench_moderation

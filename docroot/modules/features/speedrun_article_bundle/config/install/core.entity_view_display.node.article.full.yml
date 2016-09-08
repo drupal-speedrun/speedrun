@@ -32,10 +32,10 @@ third_party_settings:
               settings: {  }
               third_party_settings: {  }
               weight: 0
-            context_mapping:
-              entity: '@panelizer.entity_context:entity'
             region: middle
             weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
             uuid: a31b121e-b2e7-40a3-a7f0-f356be272b11
           9e457857-de09-4d23-8c76-8a8974b46f65:
             id: 'entity_field:node:created'
@@ -46,15 +46,15 @@ third_party_settings:
               label: hidden
               type: timestamp
               settings:
-                date_format: medium
+                date_format: html_date
                 custom_date_format: ''
                 timezone: ''
               third_party_settings: {  }
               weight: 0
-            context_mapping:
-              entity: '@panelizer.entity_context:entity'
             region: middle
             weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
             uuid: 9e457857-de09-4d23-8c76-8a8974b46f65
           f4d08589-7d8a-4995-b4c6-a53689ad8f59:
             id: 'entity_field:node:body'
@@ -62,35 +62,16 @@ third_party_settings:
             provider: ctools_block
             label_display: '0'
             formatter:
-              label: above
+              label: hidden
               type: text_default
               settings: {  }
               third_party_settings: {  }
               weight: 0
+            region: middle
+            weight: -10
             context_mapping:
               entity: '@panelizer.entity_context:entity'
-            region: middle
-            weight: 101
             uuid: f4d08589-7d8a-4995-b4c6-a53689ad8f59
-          0148a792-fef1-4419-9418-74d6a7a175f8:
-            id: 'entity_field:node:field_blog'
-            label: Blog
-            provider: ctools_block
-            label_display: '0'
-            formatter:
-              label: above
-              type: boolean
-              settings:
-                format: default
-                format_custom_false: ''
-                format_custom_true: ''
-              third_party_settings: {  }
-              weight: 0
-            context_mapping:
-              entity: '@panelizer.entity_context:entity'
-            region: middle
-            weight: 102
-            uuid: 0148a792-fef1-4419-9418-74d6a7a175f8
         id: panels_variant
         label: Default
         uuid: d66dd1f8-f75d-403b-a4d0-45ecf6742d2e
@@ -98,26 +79,27 @@ third_party_settings:
         layout: onecol
         layout_settings: {  }
         page_title: '[node:title]'
-        storage_type: ''
-        storage_id: ''
+        storage_type: panelizer_default
+        storage_id: 'node:article:full:default'
         builder: ipe
         pattern: panelizer
+        static_context: {  }
       blog:
         blocks:
           dc91b4f3-c074-42c9-9faf-ff45418f626d:
             id: 'entity_field:node:uid'
             label: 'Authored by'
             provider: ctools_block
-            label_display: visible
+            label_display: '0'
             formatter:
-              label: above
+              label: hidden
               type: entity_reference_label
               settings:
                 link: true
               third_party_settings: {  }
               weight: 0
             region: sidebar_right
-            weight: -1
+            weight: -10
             uuid: dc91b4f3-c074-42c9-9faf-ff45418f626d
             context_mapping:
               entity: '@panelizer.entity_context:entity'
@@ -125,18 +107,18 @@ third_party_settings:
             id: 'entity_field:node:created'
             label: 'Authored on'
             provider: ctools_block
-            label_display: visible
+            label_display: '0'
             formatter:
-              label: above
+              label: hidden
               type: timestamp
               settings:
-                date_format: medium
+                date_format: html_date
                 custom_date_format: ''
                 timezone: ''
               third_party_settings: {  }
               weight: 0
             region: sidebar_right
-            weight: 0
+            weight: -9
             uuid: ffe290a0-fa00-4610-ad74-08a692e061ac
             context_mapping:
               entity: '@panelizer.entity_context:entity'
@@ -144,15 +126,15 @@ third_party_settings:
             id: 'entity_field:node:body'
             label: Body
             provider: ctools_block
-            label_display: visible
+            label_display: '0'
             formatter:
-              label: above
+              label: hidden
               type: text_default
               settings: {  }
               third_party_settings: {  }
               weight: 0
             region: sidebar_right
-            weight: 2
+            weight: -7
             uuid: ce70fd9b-b118-447d-a0fb-72db58a557c0
             context_mapping:
               entity: '@panelizer.entity_context:entity'
@@ -170,8 +152,25 @@ third_party_settings:
               third_party_settings: {  }
               weight: 0
             region: sidebar_right
-            weight: 1
+            weight: -8
             uuid: bf0db135-8cde-4887-a14d-bc9b1fc3d85b
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          0fedd4a9-d1e2-4dae-a54e-6c002eb8c9f2:
+            id: 'entity_field:node:uid'
+            label: 'Authored by'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: entity_reference_entity_view
+              settings:
+                view_mode: compact
+              third_party_settings: {  }
+              weight: 0
+            region: sidebar_left
+            weight: -2
+            uuid: 0fedd4a9-d1e2-4dae-a54e-6c002eb8c9f2
             context_mapping:
               entity: '@panelizer.entity_context:entity'
         id: panels_variant
