@@ -30,3 +30,27 @@
   color: white;
   font-weight: 700;
 }
+
+/* line 36, ../sass/component.scss */
+.btn {
+  text-transform: uppercase;
+}
+
+/* line 39, ../sass/component.scss */
+.btn-default {
+  background-color: #232323;
+  color: white;
+}
+/* line 42, ../sass/component.scss */
+.btn-default:hover, .btn-default:active {
+  background-color: #0a0a0a;
+}
+
+/* line 47, ../sass/component.scss */
+.btn-info {
+  background-color: #00aef0;
+}
+/* line 49, ../sass/component.scss */
+.btn-info:hover {
+  background-color: #009cd7;
+}

@@ -31,3 +31,22 @@
     font-weight: 700;
   }
 }
+
+// Default buttons.
+.btn {
+  text-transform: uppercase;
+}
+.btn-default {
+  background-color: $gray-dark;
+  color: white;
+  &:hover,
+  &:active {
+    background-color: darken($gray-dark, 10%);
+  }
+}
+.btn-info {
+  background-color: $base-1;
+  &:hover {
+    background-color: darken($base-1, 5%);
+  }
+}

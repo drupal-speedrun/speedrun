@@ -62,7 +62,7 @@ a:hover {
 
 /* line 61, ../sass/base.scss */
 .reverse-contrast {
-  background-color: #333;
+  background-color: #232323;
   color: #a2a2a2;
 }
 /* line 64, ../sass/base.scss */
@@ -175,21 +175,26 @@ a.link-highlight-1,
 }
 
 /* line 132, ../sass/base.scss */
+.bg-gray-dark {
+  background-color: #232323;
+}
+
+/* line 133, ../sass/base.scss */
 .bg-base {
   background-color: #00aef0;
 }
 
-/* line 133, ../sass/base.scss */
+/* line 134, ../sass/base.scss */
 .bg-highlight-1 {
   background-color: #ffcc05;
 }
 
-/* line 134, ../sass/base.scss */
+/* line 135, ../sass/base.scss */
 .bg-highlight-2 {
   background-color: #f8921e;
 }
 
-/* line 135, ../sass/base.scss */
+/* line 136, ../sass/base.scss */
 .bg-highlight-3 {
   background-color: #89c95b;
 }

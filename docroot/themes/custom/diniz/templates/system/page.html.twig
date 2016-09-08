@@ -183,10 +183,17 @@
   {% endblock %}
 {% endif %}
 
-{% if page.footer %}
-  {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endblock %}
-{% endif %}
+{% block footer %}
+<footer class="footer text-white bg-gray-dark link-white" role="contentinfo">
+  <div class="container">
+    <ul class="list-inline">
+        <li>12345 Main Street, Boston, MA</li>
+        <li>617-123-4567</li>
+        <li>
+            <a href=/contact/contact_forml">{{ 'Contact Us'|t }}</a>
+        </li>
+    </ul>
+  </div>
+</footer>
+{% endblock %}
+
