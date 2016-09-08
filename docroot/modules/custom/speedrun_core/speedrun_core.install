@@ -9,6 +9,9 @@
  *
  * @see system_install()
  */
+
+use Drupal\menu_link_content\Entity\MenuLinkContent;
+
 function speedrun_core_install() {
   // Enable and set diniz as default theme.
   \Drupal::service('theme_installer')->install(['diniz']);
@@ -17,4 +20,23 @@ function speedrun_core_install() {
     ->getEditable('system.theme')
     ->set('default', 'diniz')
     ->save(TRUE);
+
+  MenuLinkContent::create([
+    'title' => 'Sign Up',
+    'link' => ['uri' => 'internal:/user/register'],
+    'menu_name' => 'main',
+    'weight' => 50,
+  ])->save();
+  MenuLinkContent::create([
+    'title' => 'Member Login',
+    'link' => ['uri' => 'internal:/user/login'],
+    'menu_name' => 'main',
+    'weight' => 51,
+  ])->save();
+  MenuLinkContent::create([
+    'title' => 'My Profile',
+    'link' => ['uri' => 'internal:/user'],
+    'menu_name' => 'main',
+    'weight' => 51,
+  ])->save();
 }

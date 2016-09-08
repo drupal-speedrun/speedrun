@@ -10,7 +10,7 @@ dependencies:
 id: diniz_main_menu
 theme: diniz
 region: navigation
-weight: 0
+weight: -4
 provider: null
 plugin: 'system_menu_block:main'
 settings:

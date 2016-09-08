@@ -7,8 +7,8 @@ dependencies:
     - diniz
 id: diniz_branding
 theme: diniz
-region: header
-weight: 0
+region: navigation
+weight: -5
 provider: null
 plugin: system_branding_block
 settings:
@@ -17,6 +17,6 @@ settings:
   provider: system
   label_display: '0'
   use_site_logo: true
-  use_site_name: true
-  use_site_slogan: true
+  use_site_name: false
+  use_site_slogan: false
 visibility: {  }
