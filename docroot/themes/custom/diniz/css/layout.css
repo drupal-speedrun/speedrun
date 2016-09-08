@@ -77,17 +77,44 @@ article.panel:last-child {
   }
 }
 
-/* line 68, ../sass/layout.scss */
+/* line 69, ../sass/layout.scss */
 .flex-item {
   flex: 1;
   margin-left: 15px;
   margin-right: 15px;
 }
-/* line 72, ../sass/layout.scss */
+/* line 73, ../sass/layout.scss */
 .flex-item:first-child {
   margin-left: 0;
 }
-/* line 75, ../sass/layout.scss */
+/* line 76, ../sass/layout.scss */
 .flex-item:last-child {
   margin-right: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 83, ../sass/layout.scss */
+  .navbar-header {
+    float: none;
+  }
+
+  /* line 84, ../sass/layout.scss */
+  .navbar .navbar-nav {
+    display: flex;
+    flex-flow: row wrap;
+    float: none;
+    vertical-align: top;
+    width: 100%;
+  }
+  /* line 90, ../sass/layout.scss */
+  .navbar .navbar-nav li {
+    flex: 1;
+    float: none;
+    white-space: nowrap;
+  }
+
+  /* line 96, ../sass/layout.scss */
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
 }

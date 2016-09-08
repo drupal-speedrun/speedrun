@@ -65,6 +65,7 @@ article.panel:last-child {
   }
 }
 
+// Basic flexbox support
 .flex-item {
   flex: 1;
   margin-left: 15px;
@@ -74,5 +75,25 @@ article.panel:last-child {
   }
   &:last-child {
     margin-right: 0;
+  }
+}
+
+// Center the main nav
+@media (min-width: 768px) {
+  .navbar-header { float: none; }
+  .navbar .navbar-nav {
+    display: flex;
+    flex-flow: row wrap;
+    float: none;
+    vertical-align: top;
+    width: 100%;
+    li {
+      flex: 1;
+      float: none;
+      white-space: nowrap;
+    }
+  }
+  .navbar .navbar-collapse {
+    text-align: center;
   }
 }

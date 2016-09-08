@@ -15,8 +15,3 @@
 .flag:hover {
   border: 1px solid transparent;
 }
-
-/* line 20, ../sass/theme.scss */
-.region-containerless > .block {
-  background-color: #ccc;
-}

@@ -11,3 +11,23 @@
   background-size: cover;
   background-position: center center;
 }
+
+// Main Nav typography
+.navbar .navbar-nav {
+  li a,
+  li a:hover,
+  li a:active,
+  li a:focus,
+  li.active a {
+    color: white;
+    text-align: center;
+  }
+  li.active a,
+  li.active a:hover,
+  li a:active,
+  li a:hover {
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+  }
+}

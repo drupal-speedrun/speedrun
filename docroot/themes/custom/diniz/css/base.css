@@ -52,11 +52,11 @@ h6 {
 
 /* line 52, ../sass/base.scss */
 a {
-  color: #ffcc05;
+  color: #00aef0;
 }
 /* line 54, ../sass/base.scss */
 a:hover {
-  color: #ffcc05;
+  color: #00aef0;
   text-decoration: underline;
 }
 
@@ -84,7 +84,7 @@ a:hover {
 }
 /* line 81, ../sass/base.scss */
 .reverse-contrast .nav li a {
-  color: #a2a2a2;
+  color: white;
 }
 /* line 83, ../sass/base.scss */
 .reverse-contrast .nav li a:hover {
@@ -92,7 +92,7 @@ a:hover {
 }
 /* line 86, ../sass/base.scss */
 .reverse-contrast .nav li a:before {
-  background-color: #a2a2a2;
+  background-color: white;
 }
 /* line 91, ../sass/base.scss */
 .reverse-contrast .nav li.active a {
@@ -116,4 +116,80 @@ a:hover {
 /* line 107, ../sass/base.scss */
 .font-smaller {
   font-size: 85%;
+}
+
+/* line 112, ../sass/base.scss */
+.text-white {
+  color: white;
+}
+
+/* line 113, ../sass/base.scss */
+.text-base {
+  color: #00aef0;
+}
+
+/* line 114, ../sass/base.scss */
+.text-highlight-1 {
+  color: #ffcc05;
+}
+
+/* line 115, ../sass/base.scss */
+.text-highlight-2 {
+  color: #f8921e;
+}
+
+/* line 116, ../sass/base.scss */
+.text-highlight-3 {
+  color: #89c95b;
+}
+
+/* line 119, ../sass/base.scss */
+a.link-white,
+.link-white a,
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+/* line 122, ../sass/base.scss */
+a.link-base,
+.link-base a {
+  color: #00aef0;
+}
+
+/* line 124, ../sass/base.scss */
+a.link-highlight-1,
+.link-highlight-1 a {
+  color: #ffcc05;
+}
+
+/* line 126, ../sass/base.scss */
+a.link-highlight-1,
+.link-highlight-1 a {
+  color: #f8921e;
+}
+
+/* line 128, ../sass/base.scss */
+a.link-highlight-1,
+.link-highlight-1 a {
+  color: #89c95b;
+}
+
+/* line 132, ../sass/base.scss */
+.bg-base {
+  background-color: #00aef0;
+}
+
+/* line 133, ../sass/base.scss */
+.bg-highlight-1 {
+  background-color: #ffcc05;
+}
+
+/* line 134, ../sass/base.scss */
+.bg-highlight-2 {
+  background-color: #f8921e;
+}
+
+/* line 135, ../sass/base.scss */
+.bg-highlight-3 {
+  background-color: #89c95b;
 }

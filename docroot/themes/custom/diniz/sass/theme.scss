@@ -15,10 +15,3 @@
   border: 1px solid transparent; // Flag sets this to 0 which BS doesn't like.
 }
 
-// Theme
-.region-containerless {
-  > .block {
-    background-color: #ccc;
-  }
-}
-

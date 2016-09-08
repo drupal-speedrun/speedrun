@@ -50,9 +50,9 @@ h6 {
 }
 
 a {
-  color: $highlight-1;
+  color: $base-1;
   &:hover {
-    color: $highlight-1;
+    color: $base-1;
     text-decoration: underline;
   }
 }
@@ -79,12 +79,12 @@ a {
   .nav li {
     // Link colors contained in menus need to be white too.
     a {
-      color: $gray-light;
+      color: white;
       &:hover {
         color: white;
       }
       &:before {
-        background-color: $gray-light;
+        background-color: white;
       }
     }
     &.active {
@@ -107,3 +107,29 @@ a {
 .font-smaller {
   font-size: 85%;
 }
+
+// Text colors
+.text-white { color: white; }
+.text-base { color: $base-1; }
+.text-highlight-1 { color: $highlight-1; }
+.text-highlight-2 { color: $highlight-2; }
+.text-highlight-3 { color: $highlight-3; }
+
+// Link colors
+a.link-white,
+.link-white a,
+.navbar-default .navbar-nav > li > a { color: white; }
+a.link-base,
+.link-base a { color: $base-1; } /// Blue
+a.link-highlight-1,
+.link-highlight-1 a { color: $highlight-1; } // Yellow
+a.link-highlight-1,
+.link-highlight-1 a { color: $highlight-2; } // Orange
+a.link-highlight-1,
+.link-highlight-1 a { color: $highlight-3; } // Green
+
+// Background colors
+.bg-base { background-color: $base-1; }
+.bg-highlight-1 { background-color: $highlight-1; }
+.bg-highlight-2 { background-color: $highlight-2; }
+.bg-highlight-3 { background-color: $highlight-3; }

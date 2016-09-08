@@ -11,3 +11,22 @@
   background-size: cover;
   background-position: center center;
 }
+
+/* line 17, ../sass/component.scss */
+.navbar .navbar-nav li a,
+.navbar .navbar-nav li a:hover,
+.navbar .navbar-nav li a:active,
+.navbar .navbar-nav li a:focus,
+.navbar .navbar-nav li.active a {
+  color: white;
+  text-align: center;
+}
+/* line 25, ../sass/component.scss */
+.navbar .navbar-nav li.active a,
+.navbar .navbar-nav li.active a:hover,
+.navbar .navbar-nav li a:active,
+.navbar .navbar-nav li a:hover {
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+}
