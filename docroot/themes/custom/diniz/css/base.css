@@ -12,24 +12,6 @@
 html {
   font-size: 62.5%;
 }
-@media (max-width: 1199px) {
-  /* line 12, ../sass/base.scss */
-  html {
-    font-size: 56.25%;
-  }
-}
-@media (max-width: 991px) {
-  /* line 12, ../sass/base.scss */
-  html {
-    font-size: 50%;
-  }
-}
-@media (max-width: 767px) {
-  /* line 12, ../sass/base.scss */
-  html {
-    font-size: 43.75%;
-  }
-}
 
 /* line 27, ../sass/base.scss */
 body {
@@ -70,11 +52,11 @@ h6 {
 
 /* line 52, ../sass/base.scss */
 a {
-  color: #1183f8;
+  color: #ffcc05;
 }
 /* line 54, ../sass/base.scss */
 a:hover {
-  color: #1183f8;
+  color: #ffcc05;
   text-decoration: underline;
 }
 
@@ -89,12 +71,12 @@ a:hover {
 }
 /* line 67, ../sass/base.scss */
 .reverse-contrast.reverse-contrast__base-1 {
-  background-color: #02203f;
+  background-color: #00aef0;
   color: white;
 }
 /* line 72, ../sass/base.scss */
 .reverse-contrast.reverse-contrast__base-1 label {
-  color: #b3ce00;
+  color: #f8921e;
 }
 /* line 76, ../sass/base.scss */
 .reverse-contrast h1, .reverse-contrast h2, .reverse-contrast h3, .reverse-contrast h4, .reverse-contrast h5, .reverse-contrast h6 {
@@ -123,7 +105,7 @@ a:hover {
 
 /* line 101, ../sass/base.scss */
 .bgc-base-1 {
-  background-color: #02203f;
+  background-color: #00aef0;
 }
 
 /* line 104, ../sass/base.scss */
