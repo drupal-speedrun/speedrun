@@ -44,13 +44,14 @@
 /* line 42, ../sass/component.scss */
 .btn-default:hover, .btn-default:active {
   background-color: #0a0a0a;
+  color: white;
 }
 
-/* line 47, ../sass/component.scss */
+/* line 48, ../sass/component.scss */
 .btn-info {
   background-color: #00aef0;
 }
-/* line 49, ../sass/component.scss */
+/* line 50, ../sass/component.scss */
 .btn-info:hover {
   background-color: #009cd7;
 }
