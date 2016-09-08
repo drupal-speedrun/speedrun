@@ -17,7 +17,6 @@ modules:
   - speedrun_core
   - speedrun_layout
   - speedrun_theme_and_block_settings
-  - bootstrap_layouts
   # The following features will be built live and should be commented out when
   # building for the speedrun.
   - speedrun_pokemon_bundle

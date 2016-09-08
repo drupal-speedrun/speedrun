@@ -13,6 +13,21 @@ stripey_stacked:
       label: Right (6 columns)
     bottom:
       label: Bottom (containerless)
+eight_four_stacked:
+  label: 8/4 Stacked
+  category: Speedrun
+  path: layouts/eight_four_stacked
+  template: eight-four-stacked
+  icon: eight-four-stacked.png
+  regions:
+    top:
+      label: Top (containerless)
+    left:
+      label: Left (8 columns)
+    right:
+      label: Right (4 columns)
+    bottom:
+      label: Bottom (containerless)
 nine_three_stacked:
   label: 9/3 Stacked
   category: Speedrun
