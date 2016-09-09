@@ -329,32 +329,11 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 5
+          items_per_page: 0
           offset: 0
       defaults:
         pager: false
-      display_description: ''
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
-  page_1:
-    display_plugin: page
-    id: page_1
-    display_title: 'Pokedex Page'
-    position: 1
-    display_options:
-      display_extenders: {  }
-      path: pokedex
-      menu:
-        type: normal
-        title: Pokedex
-        menu_name: main
+        empty: false
       display_description: ''
       empty:
         area:
@@ -367,18 +346,15 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'You have not collected any Pokemon yet!'
+            value: 'You have not collected any Pokemon yet.'
             format: rich_text
           plugin_id: text
-      defaults:
-        empty: false
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
