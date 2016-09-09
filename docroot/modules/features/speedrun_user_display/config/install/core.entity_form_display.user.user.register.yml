@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.register
+    - field.field.user.user.field_picture
+    - field.field.user.user.field_pokemon_enthusiast_since
+  module:
+    - user
+id: user.user.register
+targetEntityType: user
+bundle: user
+mode: register
+content:
+  account:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+  field_pokemon_enthusiast_since_y:
+    weight: 8
+    settings:
+      date_order: YMD
+      time_type: none
+      increment: 15
+    third_party_settings: {  }
+    type: datetime_datelist
+hidden:
+  contact: true
+  field_picture: true
+  field_pokemon_enthusiast_since: true
+  language: true
+  timezone: true

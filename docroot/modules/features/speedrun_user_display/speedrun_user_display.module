@@ -1,0 +1,27 @@
+<?php
+
+use Drupal\user\UserInterface;
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function speedrun_user_display_user_presave(UserInterface $user) {
+  if ($user->isNew()) {
+    $default_image = $user->getFieldDefinition('field_picture')->getSetting('default_image');
+    if ($default_image['uuid']) {
+      $files = \Drupal::entityTypeManager()
+        ->getStorage('file')
+        ->loadByProperties([
+          'uuid' => $default_image['uuid'],
+        ]);
+
+      if ($files) {
+        $user->set('field_picture', reset($files));
+      }
+    }
+
+    // Set a random year since which the user has been a Pokemon enthusiast.
+    $since = time() - (rand(0, 5) * 365 * 24 * 60 * 60);
+    $user->set('field_pokemon_enthusiast_since', $since);
+  }
+}
