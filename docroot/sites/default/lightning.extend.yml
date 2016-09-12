@@ -14,6 +14,7 @@ lightning_extensions:
 # List of additional modules to enable after Lightning is installed.
 modules:
   - features_ui
+  - flag
   - speedrun_core
   - speedrun_layout
   - speedrun_theme_and_block_settings
