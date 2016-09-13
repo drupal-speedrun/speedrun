@@ -3,14 +3,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - flag.flag.registrants
-    - node.type.training_program
+    - node.type.article
   module:
-    - flag
     - node
     - user
-id: my_trainings
-label: 'My Trainings'
+id: blog
+label: Blog
 module: views
 description: ''
 tag: ''
@@ -50,10 +48,23 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: none
+        type: mini
         options:
-          items_per_page: 0
+          items_per_page: 10
           offset: 0
+          id: 0
+          total_pages: null
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
       style:
         type: default
       row:
@@ -125,72 +136,92 @@ display:
           table: node_field_data
           field: type
           value:
-            training_program: training_program
+            article: article
           entity_type: node
           entity_field: type
           plugin_id: bundle
+        field_blog_value:
+          id: field_blog_value
+          table: node__field_blog
+          field: field_blog_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: true
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: boolean
       sorts:
         created:
           id: created
-          table: flagging
+          table: node_field_data
           field: created
-          relationship: flag_relationship
+          order: DESC
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          relationship: none
           group_type: group
           admin_label: ''
-          order: DESC
           exposed: false
           expose:
             label: ''
           granularity: second
-          entity_type: flagging
-          entity_field: created
-          plugin_id: date
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          order: DESC
-          entity_type: node
-          entity_field: title
-          plugin_id: standard
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-      title: 'My Trainings'
+      title: Blog
       header: {  }
       footer: {  }
-      empty:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: false
-          content:
-            value: 'You are not registered for any trainings.'
-            format: rich_text
-          plugin_id: text
-      relationships:
-        flag_relationship:
-          id: flag_relationship
-          table: node_field_data
-          field: flag_relationship
-          relationship: none
-          group_type: group
-          admin_label: Flag
-          required: true
-          flag: registrants
-          user_scope: current
-          entity_type: node
-          plugin_id: flag_relationship
+      empty: {  }
+      relationships: {  }
       arguments: {  }
       display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
+    position: 2
+    display_options:
+      display_extenders: {  }
+      pager:
+        type: some
+        options:
+          items_per_page: 5
+          offset: 0
+      defaults:
+        pager: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -199,18 +230,20 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  block_1:
-    display_plugin: block
-    id: block_1
-    display_title: Block
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }
+      path: blog
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

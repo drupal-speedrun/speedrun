@@ -20,6 +20,8 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
+  flag_registration:
+    weight: 10
   links:
     weight: 100
 hidden: {  }

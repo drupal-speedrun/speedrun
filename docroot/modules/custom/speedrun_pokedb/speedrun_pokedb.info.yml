@@ -3,4 +3,4 @@ type: module
 core: 8.x
 description: 'A fat database of Pokemon.'
 dependencies:
-  - speedrun_pokemon_bundle
+  - speedrun_monolith

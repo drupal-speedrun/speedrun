@@ -5,11 +5,8 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.training_program.body
     - field.field.node.training_program.field_exercises
-    - field.field.node.training_program.field_image
     - field.field.node.training_program.field_pokemon
-    - field.field.node.training_program.field_teaser_image
     - field.field.node.training_program.field_trainer
-    - field.field.node.training_program.panelizer
     - node.type.training_program
   module:
     - image
