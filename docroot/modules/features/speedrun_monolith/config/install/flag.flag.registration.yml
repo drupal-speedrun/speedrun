@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: registration
+label: Registration
+bundles:
+  - training_program
+entity_type: node
+enabled: true
+global: false
+weight: 0
+flag_short: 'Sign up for this training'
+flag_long: ''
+flag_message: 'You have been signed up for this training.'
+unflag_short: 'Leave this training'
+unflag_long: 'You have been removed from this training.'
+unflag_message: ''
+unflag_denied_text: ''
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: 1
+  show_on_form: 0
+  show_contextual_link: 0
+  access_author: ''
+linkTypeConfig: {  }
