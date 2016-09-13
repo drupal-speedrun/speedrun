@@ -86,4 +86,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  panelizer:
+    type: panelizer
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }
