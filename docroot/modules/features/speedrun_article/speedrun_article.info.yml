@@ -1,0 +1,10 @@
+name: 'Speedrun Article'
+type: module
+core: 8.x
+dependencies:
+  - image
+  - panelizer
+  - speedrun_monolith
+  - text
+  - user
+  - views
