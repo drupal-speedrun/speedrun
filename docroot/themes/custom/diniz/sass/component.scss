@@ -31,7 +31,7 @@
     font-weight: 700;
   }
 }
-.navbar {
+.page-node-type-landing-page .navbar {
   margin-bottom: 0;
 }
 
@@ -60,6 +60,15 @@
   background-color: transparent;
   padding-top: 96px;
   padding-bottom: 96px;
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 8rem;
+    }
+    h2 {
+      font-size: 6.2rem;
+      text-transform: uppercase;
+    }
+  }
 }
 
 // Landing page columns. These are the columns of rich text or user reference

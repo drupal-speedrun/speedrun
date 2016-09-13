@@ -15,187 +15,188 @@ html {
 
 /* line 27, ../sass/base.scss */
 body {
+  color: #494949;
   font-family: "Exo 2", sans-serif;
   font-size: 1.8em;
   font-weight: 300;
 }
 
-/* line 33, ../sass/base.scss */
+/* line 34, ../sass/base.scss */
 h1 {
   font-size: 3.6rem;
   text-transform: uppercase;
 }
 
-/* line 37, ../sass/base.scss */
+/* line 38, ../sass/base.scss */
 h2 {
   font-size: 3.2rem;
 }
 
-/* line 40, ../sass/base.scss */
+/* line 41, ../sass/base.scss */
 h3 {
   font-size: 3rem;
 }
 
-/* line 43, ../sass/base.scss */
+/* line 44, ../sass/base.scss */
 h4 {
   font-size: 2.4rem;
 }
 
-/* line 46, ../sass/base.scss */
+/* line 47, ../sass/base.scss */
 h5 {
   font-size: 2rem;
 }
 
-/* line 49, ../sass/base.scss */
+/* line 50, ../sass/base.scss */
 h6 {
   font-size: 1.8rem;
 }
 
-/* line 53, ../sass/base.scss */
+/* line 54, ../sass/base.scss */
 a {
   color: #00aef0;
 }
-/* line 55, ../sass/base.scss */
+/* line 56, ../sass/base.scss */
 a:hover {
   color: #00aef0;
   text-decoration: underline;
 }
 
-/* line 62, ../sass/base.scss */
+/* line 63, ../sass/base.scss */
 .reverse-contrast {
   background-color: #232323;
-  color: #a2a2a2;
+  color: #494949;
 }
-/* line 65, ../sass/base.scss */
+/* line 66, ../sass/base.scss */
 .reverse-contrast a {
-  color: #a2a2a2;
+  color: #494949;
 }
-/* line 68, ../sass/base.scss */
+/* line 69, ../sass/base.scss */
 .reverse-contrast.reverse-contrast__base-1 {
   background-color: #00aef0;
   color: white;
 }
-/* line 73, ../sass/base.scss */
+/* line 74, ../sass/base.scss */
 .reverse-contrast.reverse-contrast__base-1 label {
   color: #f8921e;
 }
-/* line 77, ../sass/base.scss */
+/* line 78, ../sass/base.scss */
 .reverse-contrast h1, .reverse-contrast h2, .reverse-contrast h3, .reverse-contrast h4, .reverse-contrast h5, .reverse-contrast h6 {
   color: white;
 }
-/* line 82, ../sass/base.scss */
+/* line 83, ../sass/base.scss */
 .reverse-contrast .nav li a {
   color: white;
 }
-/* line 84, ../sass/base.scss */
+/* line 85, ../sass/base.scss */
 .reverse-contrast .nav li a:hover {
   color: white;
 }
-/* line 87, ../sass/base.scss */
+/* line 88, ../sass/base.scss */
 .reverse-contrast .nav li a:before {
   background-color: white;
 }
-/* line 92, ../sass/base.scss */
+/* line 93, ../sass/base.scss */
 .reverse-contrast .nav li.active a {
   color: white;
 }
-/* line 94, ../sass/base.scss */
+/* line 95, ../sass/base.scss */
 .reverse-contrast .nav li.active a:hover {
   color: white;
 }
 
-/* line 102, ../sass/base.scss */
+/* line 103, ../sass/base.scss */
 .bgc-base-1 {
   background-color: #00aef0;
 }
 
-/* line 105, ../sass/base.scss */
+/* line 106, ../sass/base.scss */
 .text-white {
   color: white !important;
 }
 
-/* line 108, ../sass/base.scss */
+/* line 109, ../sass/base.scss */
 .font-smaller {
   font-size: 85%;
 }
 
-/* line 113, ../sass/base.scss */
+/* line 114, ../sass/base.scss */
 .text-white {
   color: white;
 }
 
-/* line 114, ../sass/base.scss */
+/* line 115, ../sass/base.scss */
 .text-base {
   color: #00aef0;
 }
 
-/* line 115, ../sass/base.scss */
+/* line 116, ../sass/base.scss */
 .text-highlight-1 {
   color: #ffcc05;
 }
 
-/* line 116, ../sass/base.scss */
+/* line 117, ../sass/base.scss */
 .text-highlight-2 {
   color: #f8921e;
 }
 
-/* line 117, ../sass/base.scss */
+/* line 118, ../sass/base.scss */
 .text-highlight-3 {
   color: #89c95b;
 }
 
-/* line 120, ../sass/base.scss */
+/* line 121, ../sass/base.scss */
 a.link-white,
 .link-white a,
 .navbar-default .navbar-nav > li > a {
   color: white;
 }
 
-/* line 123, ../sass/base.scss */
+/* line 124, ../sass/base.scss */
 a.link-base,
 .link-base a {
   color: #00aef0;
 }
 
-/* line 125, ../sass/base.scss */
+/* line 126, ../sass/base.scss */
 a.link-highlight-1,
 .link-highlight-1 a {
   color: #ffcc05;
 }
 
-/* line 127, ../sass/base.scss */
+/* line 128, ../sass/base.scss */
 a.link-highlight-1,
 .link-highlight-1 a {
   color: #f8921e;
 }
 
-/* line 129, ../sass/base.scss */
+/* line 130, ../sass/base.scss */
 a.link-highlight-1,
 .link-highlight-1 a {
   color: #89c95b;
 }
 
-/* line 133, ../sass/base.scss */
+/* line 134, ../sass/base.scss */
 .bg-gray-dark {
   background-color: #232323;
 }
 
-/* line 134, ../sass/base.scss */
+/* line 135, ../sass/base.scss */
 .bg-base {
   background-color: #00aef0;
 }
 
-/* line 135, ../sass/base.scss */
+/* line 136, ../sass/base.scss */
 .bg-highlight-1 {
   background-color: #ffcc05;
 }
 
-/* line 136, ../sass/base.scss */
+/* line 137, ../sass/base.scss */
 .bg-highlight-2 {
   background-color: #f8921e;
 }
 
-/* line 137, ../sass/base.scss */
+/* line 138, ../sass/base.scss */
 .bg-highlight-3 {
   background-color: #89c95b;
 }
