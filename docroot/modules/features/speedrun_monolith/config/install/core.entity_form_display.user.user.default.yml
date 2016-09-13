@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_picture
+    - field.field.user.user.field_pokemon_enthusiast_since
+    - image.style.thumbnail
+  module:
+    - datetime
+    - image
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+  field_picture:
+    type: image_image
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_pokemon_enthusiast_since:
+    type: datetime_datelist
+    weight: 0
+    settings:
+      increment: 15
+      date_order: YMD
+      time_type: '24'
+    third_party_settings: {  }
+hidden:
+  contact: true
+  language: true
+  timezone: true

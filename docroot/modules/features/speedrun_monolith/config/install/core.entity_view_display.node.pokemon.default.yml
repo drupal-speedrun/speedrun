@@ -13,7 +13,6 @@ dependencies:
     - node.type.pokemon
   module:
     - image
-    - text
     - user
 id: node.pokemon.default
 targetEntityType: node
@@ -83,6 +82,8 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_decimal
+  flag_pokedex:
+    weight: 10
   links:
     weight: 100
 hidden:

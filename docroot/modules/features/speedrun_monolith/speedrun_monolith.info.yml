@@ -9,6 +9,10 @@ dependencies:
   - file
   - flag
   - image
+  - lightning_media_image
+  - lightning_media_twitter
+  - lightning_media_video
+  - media_entity
   - menu_ui
   - metatag
   - node
@@ -18,4 +22,5 @@ dependencies:
   - text
   - user
   - views
+  - views_infinite_scroll
   - workbench_moderation

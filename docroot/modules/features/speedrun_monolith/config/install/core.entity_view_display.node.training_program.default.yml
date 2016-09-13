@@ -18,6 +18,8 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+  flag_registration:
+    weight: 10
   links:
     weight: 100
 hidden: {  }
