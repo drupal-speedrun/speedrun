@@ -1,0 +1,49 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.compact
+    - field.field.node.pokemon.field_abilities
+    - field.field.node.pokemon.field_growth_rate
+    - field.field.node.pokemon.field_height
+    - field.field.node.pokemon.field_image
+    - field.field.node.pokemon.field_japanese_n
+    - field.field.node.pokemon.field_species
+    - field.field.node.pokemon.field_type
+    - field.field.node.pokemon.field_weight
+    - image.style.medium
+    - node.type.pokemon
+  module:
+    - image
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.pokemon.compact
+targetEntityType: node
+bundle: pokemon
+mode: compact
+content:
+  field_image:
+    weight: 108
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+    type: image
+hidden:
+  body: true
+  field_abilities: true
+  field_growth_rate: true
+  field_height: true
+  field_japanese_n: true
+  field_species: true
+  field_type: true
+  field_weight: true
+  flag_pokedex: true
+  links: true
