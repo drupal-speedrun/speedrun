@@ -3,6 +3,7 @@ stripey_stacked:
   category: Speedrun
   path: layouts/stripey_stacked
   template: stripey-stacked
+  css: css/diniz-layout.css
   icon: stripey-stacked.png
   regions:
     top:
@@ -18,6 +19,7 @@ eight_four_stacked:
   category: Speedrun
   path: layouts/eight_four_stacked
   template: eight-four-stacked
+  css: css/diniz-layout.css
   icon: eight-four-stacked.png
   regions:
     top:
@@ -33,6 +35,7 @@ nine_three_stacked:
   category: Speedrun
   path: layouts/nine_three_stacked
   template: nine-three-stacked
+  css: css/diniz-layout.css
   icon: nine-three-stacked.png
   regions:
     top:
