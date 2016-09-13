@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c5da17eed5bc75f7425dd58ee2a6f80b",
-    "content-hash": "218eba6676a7ba60c916246828ec5f08",
+    "hash": "d29a0883a74c9f0faaa864c4bab07463",
+    "content-hash": "fdfa735ba61fe0f8e776562f13a7ce14",
     "packages": [
         {
             "name": "composer/installers",
@@ -980,16 +980,16 @@
         },
         {
             "name": "drupal/ctools",
-            "version": "8.3.0-alpha26",
+            "version": "8.3.0-alpha27",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ctools",
-                "reference": "c14a5eee970c3d0aab02e88f6c6a4d18091439b8"
+                "reference": "231e2649678d58901368a9e5681f36865ce84e73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0-alpha26.zip",
-                "reference": "c14a5eee970c3d0aab02e88f6c6a4d18091439b8",
+                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0-alpha27.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1008,9 +1008,6 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-3.x": "8.3.x-dev"
-                },
-                "patches_applied": {
-                    "2747739 - Mega patch": "https://www.drupal.org/files/issues/ctools--8.x-3.0-alpha26--1fe3649.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -1019,7 +1016,7 @@
             ],
             "description": "Provides a number of utility and helper APIs for Drupal developers and site builders.",
             "homepage": "https://www.drupal.org/project/ctools",
-            "time": "2016-05-06 18:51:13"
+            "time": "2016-08-20 19:59:03"
         },
         {
             "name": "drupal/default_content",
@@ -1167,16 +1164,16 @@
         },
         {
             "name": "drupal/entity_browser",
-            "version": "8.1.0-alpha7",
+            "version": "8.1.0-alpha8",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity_browser.git",
-                "reference": "3875750f3d0a063af6c1c5e6aee4b45d210f8264"
+                "reference": "51bbe80e35f6e962b3ec77172e9ad61fec7163dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-1.0-alpha7.zip",
-                "reference": "3875750f3d0a063af6c1c5e6aee4b45d210f8264",
+                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-1.0-alpha8.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1223,7 +1220,7 @@
             ],
             "description": "Provide a generic entity browser/picker/selector.",
             "homepage": "http://drupal.org/project/entity_browser",
-            "time": "2016-08-02 07:56:04"
+            "time": "2016-09-01 19:44:17"
         },
         {
             "name": "drupal/entity_embed",
@@ -1486,22 +1483,21 @@
         },
         {
             "name": "drupal/lightning",
-            "version": "8.1.03",
+            "version": "8.1.04",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/lightning.git",
-                "reference": "11f32757e195d24400da42e7810134b3995d00e4"
+                "reference": "67b30506dfeaf3335b70f8da5e2cc3b92e907ddc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning-8.x-1.03.zip",
-                "reference": "11f32757e195d24400da42e7810134b3995d00e4",
+                "url": "https://ftp.drupal.org/files/projects/lightning-8.x-1.04.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "^1.0",
                 "cweagans/composer-patches": "^1.5.0",
-                "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/acquia_connector": "^8.1.1",
                 "drupal/block_content": "8.*",
                 "drupal/breakpoint": "8.*",
@@ -1511,13 +1507,13 @@
                 "drupal/contact": "8.*",
                 "drupal/contextual": "8.*",
                 "drupal/core": "^8.1.0",
-                "drupal/ctools": "8.3.0-alpha26",
+                "drupal/ctools": "8.3.0-alpha27",
                 "drupal/datetime": "8.*",
                 "drupal/dblog": "8.*",
                 "drupal/editor": "8.*",
                 "drupal/embed": "^8.1.0",
                 "drupal/entity": "8.1.0-alpha3",
-                "drupal/entity_browser": "8.1.0-alpha7",
+                "drupal/entity_browser": "8.1.0-alpha8",
                 "drupal/entity_embed": "8.1.0-alpha3",
                 "drupal/entity_reference": "8.*",
                 "drupal/features": "^8.3.0",
@@ -1539,7 +1535,7 @@
                 "drupal/node": "8.*",
                 "drupal/options": "8.*",
                 "drupal/page_cache": "8.*",
-                "drupal/page_manager": "8.1.0-alpha23",
+                "drupal/page_manager": "8.1.0-alpha24",
                 "drupal/panelizer": "8.3.0-alpha2",
                 "drupal/panels": "8.3.0-beta4",
                 "drupal/path": "8.*",
@@ -1556,7 +1552,7 @@
                 "drupal/views": "8.*",
                 "drupal/views_infinite_scroll": "^8.1.1",
                 "drupal/views_ui": "8.*",
-                "drupal/workbench_moderation": "~8.1.1"
+                "drupal/workbench_moderation": "8.1.1"
             },
             "replace": {
                 "drupal/lightning_core": "self.version",
@@ -1573,6 +1569,7 @@
                 "behat/behat": "^3.0",
                 "behat/mink": "~1.7",
                 "behat/mink-goutte-driver": "~1.2",
+                "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/coder": "8.*",
                 "drupal/devel": "^8.0.0",
                 "drupal/drupal-extension": "^3.2",
@@ -1600,10 +1597,15 @@
                 "drupal/media_entity_image": "Required by drupal/lightning_media_image",
                 "drupal/media_entity_instagram": "Required by drupal/lightning_media_instagram",
                 "drupal/media_entity_twitter": "Required by drupal/lightning_media_twitter",
+                "drupal/menu_ui": "Required by drupal/lightning_core",
+                "drupal/metatag": "Required by drupal/lightning_core",
+                "drupal/node": "Required by drupal/lightning_core",
                 "drupal/page_manager": "Required by drupal/lightning_layout",
                 "drupal/panelizer": "Required by drupal/lightning_layout",
+                "drupal/path": "Required by drupal/lightning_core",
                 "drupal/scheduled_updates": "Required by drupal/lightning_workflow",
-                "drupal/user": "Required by drupal/lightning_media",
+                "drupal/text": "Required by drupal/lightning_core",
+                "drupal/user": "Required by drupal/lightning_core, drupal/lightning_media",
                 "drupal/video_embed_media": "Required by drupal/lightning_media_video",
                 "drupal/views_infinite_scroll": "Required by drupal/lightning_media",
                 "drupal/workbench_moderation": "Required by drupal/lightning_workflow"
@@ -1619,23 +1621,11 @@
                     ]
                 },
                 "patches": {
-                    "drupal/core": {
-                        "Plugin Lazy loading can cause usort warning": "https://www.drupal.org/files/issues/Iterating-through-array--2699157.patch"
-                    },
-                    "drupal/ctools": {
-                        "2747739 - Mega patch": "https://www.drupal.org/files/issues/ctools--8.x-3.0-alpha26--1fe3649.patch"
-                    },
-                    "drupal/metatag": {
-                        "2765137 - hook_install() + drupal_set_message() = message displayed several times when using a distro.": "https://www.drupal.org/files/issues/2765137-2.patch"
-                    },
-                    "drupal/page_manager": {
-                        "2747739 - Mega Patch": "https://www.drupal.org/files/issues/page_manager--alpha23-09e79ff--2747739-3.patch"
-                    },
                     "drupal/panelizer": {
                         "2747739 - Mega Patch": "https://www.drupal.org/files/issues/panelizer--alpha2-1ddfa61--2747739-5.patch",
                         "2701349 - Generate new UUIDs for displays when switching from default to field storage": "https://www.drupal.org/files/issues/2701349-2.patch",
                         "2700597 - Explicitly set the Panels IPE URL root when saving in Panelizer": "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch",
-                        "2664682 - Implement admin UI for editing Panelizer defaults": "https://www.drupal.org/files/issues/2664682-49.patch"
+                        "2664682 - Implement admin UI for editing Panelizer defaults": "https://www.drupal.org/files/issues/2664682-55.patch"
                     },
                     "drupal/panels": {
                         "2747739 - Mega Patch": "https://www.drupal.org/files/issues/panels--beta4-4c4a3a7--2747739-17--binary.patch",
@@ -1664,7 +1654,7 @@
             ],
             "description": "A fast and feature-rich Drupal distribution.",
             "homepage": "https://www.drupal.org/project/lightning",
-            "time": "2016-08-03 19:09:44"
+            "time": "2016-09-07 19:52:21"
         },
         {
             "name": "drupal/media_entity",
@@ -1994,22 +1984,23 @@
         },
         {
             "name": "drupal/page_manager",
-            "version": "8.1.0-alpha23",
+            "version": "8.1.0-alpha24",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/page_manager",
-                "reference": "fed1710d1b366bb3417b197270c6d73caeae4fa1"
+                "reference": "e17581138de8047ffa4b740a6d9074f854aa80c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/page_manager-8.x-1.0-alpha23.zip",
-                "reference": "fed1710d1b366bb3417b197270c6d73caeae4fa1",
+                "url": "https://ftp.drupal.org/files/projects/page_manager-8.x-1.0-alpha24.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
                 "drupal/block": "8.*",
                 "drupal/core": "8.*",
-                "drupal/ctools": "~8.3.0-alpha21"
+                "drupal/ctools": "~8.3.0-alpha21",
+                "drupal/system": ">=8.0.5"
             },
             "replace": {
                 "drupal/page_manager_ui": "self.version"
@@ -2021,9 +2012,6 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
-                },
-                "patches_applied": {
-                    "2747739 - Mega Patch": "https://www.drupal.org/files/issues/page_manager--alpha23-09e79ff--2747739-3.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -2039,7 +2027,7 @@
             ],
             "description": "Provides a way to place blocks on a custom page.",
             "homepage": "https://www.drupal.org/project/page_manager",
-            "time": "2016-02-16 19:47:59"
+            "time": "2016-08-20 19:15:40"
         },
         {
             "name": "drupal/panelizer",
