@@ -22,12 +22,10 @@ modules:
   # building for the speedrun.
   - speedrun_pokemon_bundle
   - speedrun_pokedex_flag
-  - speedrun_user_display
   - speedrun_article_bundle
   - speedrun_pokedb
   - speedrun_training_program_bundle
   - speedrun_media_block
-  - speedrun_node_block
   - speedrun_landing_page_block
   - speedrun_contact_form
   - formblock

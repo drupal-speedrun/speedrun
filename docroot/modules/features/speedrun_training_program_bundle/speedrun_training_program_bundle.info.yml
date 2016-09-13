@@ -12,6 +12,7 @@ dependencies:
   - node
   - panelizer
   - path
+  - speedrun_monolith
   - speedrun_pokemon_bundle
   - text
   - user
