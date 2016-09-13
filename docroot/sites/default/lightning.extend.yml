@@ -25,6 +25,7 @@ modules:
   # building for the speedrun.
   - speedrun_article
   - speedrun_contact_form
+  - speedrun_training_program
 
 # A system path to redirect to once installation is complete.
 redirect:

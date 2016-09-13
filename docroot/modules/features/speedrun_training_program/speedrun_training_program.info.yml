@@ -1,0 +1,5 @@
+name: 'Speedrun Training Program'
+core: 8.x
+type: module
+dependencies:
+   - speedrun_monolith

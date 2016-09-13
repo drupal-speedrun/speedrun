@@ -4,9 +4,7 @@ dependencies:
   config:
     - field.field.node.training_program.body
     - field.field.node.training_program.field_exercises
-    - field.field.node.training_program.field_image
     - field.field.node.training_program.field_pokemon
-    - field.field.node.training_program.field_teaser_image
     - field.field.node.training_program.field_trainer
     - node.type.training_program
   module:
@@ -37,14 +35,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
-  field_image:
-    weight: 104
-    label: above
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
   field_pokemon:
     weight: 103
     label: above
@@ -52,14 +42,6 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-  field_teaser_image:
-    weight: 105
-    label: above
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
   field_trainer:
     weight: 102
     label: above
