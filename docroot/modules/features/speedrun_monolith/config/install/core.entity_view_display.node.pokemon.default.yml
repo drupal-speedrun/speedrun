@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.pokemon.body
     - field.field.node.pokemon.field_abilities
     - field.field.node.pokemon.field_growth_rate
     - field.field.node.pokemon.field_height
@@ -21,12 +20,6 @@ targetEntityType: node
 bundle: pokemon
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
-    third_party_settings: {  }
   field_abilities:
     weight: 109
     label: above
@@ -92,4 +85,5 @@ content:
     type: number_decimal
   links:
     weight: 100
-hidden: {  }
+hidden:
+  body: true

@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - block_content.type.media_block
-    - field.field.block_content.media_block.field_media_asset
+    - field.field.block_content.media_block.field_media_assets
   module:
     - workbench_moderation
 id: block_content.media_block.default

@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.media_block
+    - field.storage.block_content.field_media_assets
+    - media_entity.bundle.image
+    - media_entity.bundle.tweet
+    - media_entity.bundle.video
+id: block_content.media_block.field_media_assets
+field_name: field_media_assets
+entity_type: block_content
+bundle: media_block
+label: 'Media Asset(s)'
+description: 'Select the media entities to rendered.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      tweet: tweet
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference
