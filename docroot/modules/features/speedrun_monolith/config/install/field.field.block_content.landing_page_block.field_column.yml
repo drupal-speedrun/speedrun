@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.landing_page_block
+    - field.storage.block_content.field_column
+  module:
+    - text
+id: block_content.landing_page_block.field_column
+field_name: field_column
+entity_type: block_content
+bundle: landing_page_block
+label: Column(s)
+description: 'Optionally, use this repeatable field to add columns of content to the bottom of the block.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

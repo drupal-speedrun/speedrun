@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: medium
+label: 'Medium (220×220)'
+effects:
+  10519cad-e8b0-41d7-81c9-cd0670deca59:
+    uuid: 10519cad-e8b0-41d7-81c9-cd0670deca59
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 220
+      height: 220

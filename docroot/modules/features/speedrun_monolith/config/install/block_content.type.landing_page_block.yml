@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: landing_page_block
+label: 'Landing Page Block'
+revision: 1
+description: 'Block type with special settings for landing pages.'

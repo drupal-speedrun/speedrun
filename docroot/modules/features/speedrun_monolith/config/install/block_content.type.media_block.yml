@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: media_block
+label: 'Media Block'
+revision: 1
+description: 'Renders one or more referenced media assets.'

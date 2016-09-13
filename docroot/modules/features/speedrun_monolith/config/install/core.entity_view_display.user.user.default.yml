@@ -1,0 +1,116 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_picture
+    - field.field.user.user.field_pokemon_enthusiast_since
+  module:
+    - datetime
+    - image
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: true
+    custom: false
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          041d13ee-7516-4403-98e7-2697a48c32a5:
+            id: 'views_block:my_trainings-block_1'
+            label: ''
+            provider: views
+            label_display: visible
+            views_label: ''
+            items_per_page: none
+            region: right
+            weight: 0
+            uuid: 041d13ee-7516-4403-98e7-2697a48c32a5
+            context_mapping: {  }
+          e07c5a4d-ac6c-4b30-bbfc-59901654b405:
+            id: 'views_block:pokedex-block_1'
+            label: ''
+            provider: views
+            label_display: visible
+            views_label: ''
+            items_per_page: none
+            region: bottom
+            weight: 0
+            uuid: e07c5a4d-ac6c-4b30-bbfc-59901654b405
+            context_mapping: {  }
+          94de8bd9-d216-41ae-8c88-767a5470401a:
+            id: 'entity_field:user:field_picture'
+            label: Picture
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: image
+              settings:
+                image_style: medium
+                image_link: ''
+              third_party_settings: {  }
+              weight: 0
+            region: left
+            weight: -1
+            uuid: 94de8bd9-d216-41ae-8c88-767a5470401a
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          139826ee-ab22-4375-8ada-08528922b67c:
+            id: 'entity_field:user:field_pokemon_enthusiast_since'
+            label: 'Pokemon Enthusiast Since'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: datetime_default
+              settings:
+                timezone_override: ''
+                format_type: html_year
+              third_party_settings: {  }
+              weight: 0
+            region: left
+            weight: 0
+            uuid: 139826ee-ab22-4375-8ada-08528922b67c
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+        id: panels_variant
+        uuid: e061b873-3cd3-40e9-95f8-c21b9ad37b41
+        label: Default
+        weight: 0
+        layout: twocol_stacked
+        layout_settings: {  }
+        page_title: ''
+        storage_type: panelizer_default
+        storage_id: 'user:user:default:default'
+        builder: ipe
+        pattern: panelizer
+        static_context: {  }
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_picture:
+    weight: 6
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_pokemon_enthusiast_since:
+    weight: 7
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  member_for:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

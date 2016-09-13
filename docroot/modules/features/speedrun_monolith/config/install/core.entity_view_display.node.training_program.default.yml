@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.training_program.body
+    - node.type.training_program
+  module:
+    - text
+    - user
+id: node.training_program.default
+targetEntityType: node
+bundle: training_program
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

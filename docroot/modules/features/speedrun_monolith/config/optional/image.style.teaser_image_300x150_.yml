@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: teaser_image_300x150_
+label: 'Teaser Image (300x150)'
+effects:
+  381f851b-92fa-4d57-b464-83bfefb95175:
+    uuid: 381f851b-92fa-4d57-b464-83bfefb95175
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 150
