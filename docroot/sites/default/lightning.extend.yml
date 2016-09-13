@@ -1,0 +1,34 @@
+# Defines additional tasks for Lightning to perform during and after site
+# installation. Place this file in your Site Path (e.g. /sites/default or
+# /sites/SITENAME) or /sites/all directory for it to take effect.
+
+# List of lightning Extensions enabled when Lightning is installed. The presence
+# of this key will disable the Lightning Select Extensions form. If you want to
+# allow users to choose which Lightning Extensions should be enabled during
+# installation, comment out the following lines.
+lightning_extensions:
+  - lightning_workflow
+  - lightning_layout
+  - lightning_media
+
+# List of additional modules to enable after Lightning is installed.
+modules:
+  - features_ui
+  - flag
+  - formblock
+  - speedrun_core
+  - speedrun_layout
+  - speedrun_theme_and_block_settings
+  - speedrun_monolith
+  - speedrun_pokedb
+  # The following features will be built live and should be commented out when
+  # building for the speedrun.
+  - speedrun_article
+  - speedrun_contact_form
+  - speedrun_training_program
+
+# A system path to redirect to once installation is complete.
+redirect:
+  path: '/pokedb-import'
+  # Additional options to pass to the URL generator.
+  options: { }
