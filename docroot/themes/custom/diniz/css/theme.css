@@ -15,3 +15,10 @@
 .flag:hover {
   border: 1px solid transparent;
 }
+
+/* line 19, ../sass/theme.scss */
+.navbar-header {
+  background-image: url(../images/master_header_bg_repeat_148x243.jpg);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+}

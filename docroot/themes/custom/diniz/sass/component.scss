@@ -31,6 +31,9 @@
     font-weight: 700;
   }
 }
+.navbar {
+  margin-bottom: 0;
+}
 
 // Default buttons.
 .btn {
@@ -49,5 +52,44 @@
   background-color: $base-1;
   &:hover {
     background-color: darken($base-1, 5%);
+  }
+}
+
+// Make jumbotrons more jumbo
+.jumbotron {
+  background-color: transparent;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+// Landing page columns. These are the columns of rich text or user reference
+// that appear below landing page main content.
+.lp-columns {
+  padding-top: 48px;
+  .flex-item {
+    &:first-child {
+      strong {
+        color: $highlight-3;
+      }
+    }
+    &:nth-child(2) {
+      strong {
+        color: $highlight-2;
+      }
+    }
+    &:nth-child(3) {
+      strong {
+        color: $base-1;
+      }
+    }
+    &:nth-child(4) {
+      strong {
+        color: $highlight-1;
+      }
+    }
+  }
+  img {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

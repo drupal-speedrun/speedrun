@@ -15,3 +15,9 @@
   border: 1px solid transparent; // Flag sets this to 0 which BS doesn't like.
 }
 
+// Header
+.navbar-header {
+  background-image: url(../images/master_header_bg_repeat_148x243.jpg);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+}

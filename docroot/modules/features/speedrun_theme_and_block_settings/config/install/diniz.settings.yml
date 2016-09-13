@@ -13,6 +13,7 @@ features:
   node_user_picture: true
 logo:
   path: profiles/contrib/lightning/lightning.png
+  path: themes/custom/diniz/images/pokemon_evolve_fitness_logo.png
   url: ''
   use_default: false
 navbar_position: static-top
@@ -29,3 +30,4 @@ region_wells:
   containerless: ''
 table_responsive: '-1'
 table: ''
+modal_enabled: 0
