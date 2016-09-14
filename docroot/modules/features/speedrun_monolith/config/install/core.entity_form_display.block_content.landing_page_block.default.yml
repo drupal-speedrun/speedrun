@@ -9,8 +9,9 @@ dependencies:
     - field.field.block_content.landing_page_block.field_content_width
     - field.field.block_content.landing_page_block.field_offset
     - field.field.block_content.landing_page_block.field_user_reference
+    - image.style.thumbnail
   module:
-    - entity_browser
+    - image
     - text
     - workbench_moderation
 id: block_content.landing_page_block.default
@@ -27,16 +28,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_background_image:
-    type: entity_browser_file
+    type: image_image
     weight: 7
     settings:
-      entity_browser: image_browser
-      field_widget_edit: true
-      field_widget_remove: true
-      view_mode: default
       preview_image_style: thumbnail
-      open: true
-      selection_mode: append
+      progress_indicator: throbber
     third_party_settings: {  }
   field_column:
     weight: 8

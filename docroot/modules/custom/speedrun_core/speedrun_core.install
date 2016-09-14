@@ -1,6 +1,7 @@
 <?php
 
 use Drupal\file\Entity\File;
+use Drupal\media_entity\Entity\Media;
 use Drupal\menu_link_content\Entity\MenuLinkContent;
 use Drupal\user\Entity\User;
 
@@ -78,5 +79,44 @@ function speedrun_core_install() {
     $account->addRole('administrator');
     $account->activate();
     $account->save();
+  }
+
+  $files = [
+    [
+      'training_fire_130x130.png',
+      'Fire',
+    ],
+    [
+      'training_lightning_130x130.png',
+      'Lightning',
+    ],
+    [
+      'training_regular_130x130.png',
+      'Regular',
+    ],
+    [
+      'training_water_130x130.png',
+      'Water',
+    ],
+  ];
+  foreach ($files as $file) {
+    list ($picture, $label) = $file;
+
+    $source_path = __DIR__ . '/pictarz/' . $picture;
+    $destination_uri = 'public://' . $picture;
+
+    $file = File::create([
+      'uri' => file_unmanaged_copy($source_path, $destination_uri, FILE_EXISTS_REPLACE),
+    ]);
+    $file->save();
+
+    Media::create([
+      'bundle' => 'image',
+      'label' => $label,
+      'image' => $file,
+      'status' => TRUE,
+      'uid' => \Drupal::currentUser()->id(),
+      'field_media_in_library' => TRUE,
+    ])->save();
   }
 }

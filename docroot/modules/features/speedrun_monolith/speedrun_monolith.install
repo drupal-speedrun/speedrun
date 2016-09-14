@@ -2,6 +2,7 @@
 
 use Drupal\block_content\Entity\BlockContent;
 use Drupal\file\Entity\File;
+use Drupal\media_entity\Entity\Media;
 use Drupal\node\Entity\Node;
 use Drupal\user\Entity\User;
 
@@ -21,7 +22,10 @@ function speedrun_monolith_install() {
     'type' => 'landing_page_block',
     'info' => 'Summer Special (1300x550)',
     'field_background_image' => $file,
-    'body' => '<h2>Summer Special</h2><p>Get 50% off training when you bring a friend</p><p><a class="btn btn-default" href="#">Learn More</a></p>',
+    'body' => [
+      'value' => '<h2>Summer Special</h2><p>Get 50% off training when you bring a friend</p><p><a class="btn btn-default" href="#">Learn More</a></p>',
+      'format' => 'rich_text',
+    ],
   ])->save();
 
   $blog_images = [];
@@ -67,4 +71,32 @@ END;
       'moderation_state' => 'published',
     ])->save();
   }
+
+  // Create a few tweets.
+  Media::create([
+    'bundle' => 'tweet',
+    'label' => 'webchick\'s secret',
+    'embed_code' => 'https://twitter.com/webchick/status/770820148643008512',
+    'status' => TRUE,
+    'uid' => \Drupal::currentUser()->id(),
+    'field_media_in_library' => TRUE,
+  ])->save();
+
+  Media::create([
+    'bundle' => 'tweet',
+    'label' => 'timplunkett\'s 10,000th tweet',
+    'embed_code' => 'https://twitter.com/webchick/status/770820148643008512',
+    'status' => TRUE,
+    'uid' => \Drupal::currentUser()->id(),
+    'field_media_in_library' => TRUE,
+  ])->save();
+
+  Media::create([
+    'bundle' => 'tweet',
+    'label' => 'Call for assistance',
+    'embed_code' => 'https://twitter.com/chx/status/707807007559032832',
+    'status' => TRUE,
+    'uid' => \Drupal::currentUser()->id(),
+    'field_media_in_library' => TRUE,
+  ])->save();
 }
