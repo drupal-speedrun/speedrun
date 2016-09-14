@@ -1,0 +1,24 @@
+<?php
+
+use Drupal\block_content\Entity\BlockContent;
+use Drupal\file\Entity\File;
+
+/**
+ * Implements hook_install().
+ */
+function speedrun_monolith_install() {
+  $source_path = __DIR__ . '/pictures/summerspecial_bg_1300x550.jpg';
+  $destination_uri = 'public://summerspecial_bg_1300x550.jpg';
+
+  $file = File::create([
+    'uri' => file_unmanaged_copy($source_path, $destination_uri, FILE_EXISTS_REPLACE),
+  ]);
+  $file->save();
+
+  BlockContent::create([
+    'type' => 'landing_page_block',
+    'info' => 'Summer Special (1300x550)',
+    'field_background_image' => $file,
+    'body' => '<h2>Summer Special</h2><p>Get 50% off training when you bring a friend</p><p><a class="btn btn-default" href="#">Learn More</a></p>',
+  ])->save();
+}
