@@ -59,46 +59,54 @@
   }
 }
 
-/* line 54, ../sass/layout.scss */
+/* line 51, ../sass/layout.scss */
+.max-width-lg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+}
+
+/* line 62, ../sass/layout.scss */
 article.panel:last-child {
   margin-bottom: 30px;
 }
 
-/* line 59, ../sass/layout.scss */
+/* line 67, ../sass/layout.scss */
 .flex-container {
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
 }
 @media (min-width: 1200px) {
-  /* line 59, ../sass/layout.scss */
+  /* line 67, ../sass/layout.scss */
   .flex-container {
     flex-wrap: nowrap;
   }
 }
 
-/* line 69, ../sass/layout.scss */
+/* line 77, ../sass/layout.scss */
 .flex-item {
   flex: 1;
   margin-left: 15px;
   margin-right: 15px;
 }
-/* line 73, ../sass/layout.scss */
+/* line 81, ../sass/layout.scss */
 .flex-item:first-child {
   margin-left: 0;
 }
-/* line 76, ../sass/layout.scss */
+/* line 84, ../sass/layout.scss */
 .flex-item:last-child {
   margin-right: 0;
 }
 
 @media (min-width: 768px) {
-  /* line 83, ../sass/layout.scss */
+  /* line 91, ../sass/layout.scss */
   .navbar-header {
     float: none;
   }
 
-  /* line 84, ../sass/layout.scss */
+  /* line 92, ../sass/layout.scss */
   .navbar .navbar-nav {
     display: flex;
     flex-flow: row wrap;
@@ -106,14 +114,14 @@ article.panel:last-child {
     vertical-align: top;
     width: 100%;
   }
-  /* line 90, ../sass/layout.scss */
+  /* line 98, ../sass/layout.scss */
   .navbar .navbar-nav li {
     flex: 1;
     float: none;
     white-space: nowrap;
   }
 
-  /* line 96, ../sass/layout.scss */
+  /* line 104, ../sass/layout.scss */
   .navbar .navbar-collapse {
     text-align: center;
   }

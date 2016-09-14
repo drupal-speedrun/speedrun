@@ -10,12 +10,20 @@
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
     'clearfix',
-    'col-lg-' ~ lg_columns,
-    'col-lg-offset-' ~lg_offset,
   ]
 %}
 
 {% if lp_block %}
+  {%
+  set classes = [
+  'block',
+  'block-' ~ configuration.provider|clean_class,
+  'block-' ~ plugin_id|clean_class,
+  'clearfix',
+  'col-lg-' ~ lg_columns,
+  'col-lg-offset-' ~lg_offset,
+  ]
+  %}
   {# Landing Page Block #}
   {% if background_image %}
     {# With a background image #}

@@ -105,3 +105,60 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/* line 109, ../sass/component.scss */
+.bg-rainbow .bg-rainbow--item {
+  background-color: #89c95b;
+}
+/* line 111, ../sass/component.scss */
+.bg-rainbow .bg-rainbow--item:nth-child(2) {
+  background-color: #f8921e;
+}
+/* line 114, ../sass/component.scss */
+.bg-rainbow .bg-rainbow--item:nth-child(3) {
+  background-color: #00aef0;
+}
+/* line 117, ../sass/component.scss */
+.bg-rainbow .bg-rainbow--item:nth-child(4) {
+  background-color: #ffcc05;
+}
+
+@media (min-width: 1024px) {
+  /* line 124, ../sass/component.scss */
+  .twins {
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 128, ../sass/component.scss */
+  .twins .twins--twin {
+    flex: 50;
+  }
+  /* line 131, ../sass/component.scss */
+  .twins .twins--twin:first-child {
+    padding-left: 144px;
+  }
+  /* line 134, ../sass/component.scss */
+  .twins .twins--twin:last-child {
+    padding-right: 144px;
+  }
+}
+
+/* line 142, ../sass/component.scss */
+.cardotron {
+  padding: 144px 48px;
+}
+/* line 144, ../sass/component.scss */
+.cardotron h2 {
+  font-size: 5.4rem;
+}
+/* line 147, ../sass/component.scss */
+.cardotron p {
+  font-size: 2rem;
+}
+
+/* line 154, ../sass/component.scss */
+.training-program--trainer img {
+  margin-left: auto;
+  margin-right: auto;
+}

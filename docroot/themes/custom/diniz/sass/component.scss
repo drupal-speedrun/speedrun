@@ -103,3 +103,56 @@
     margin-right: auto;
   }
 }
+
+// Children of bg-rainbow have different background colors
+.bg-rainbow {
+  .bg-rainbow--item {
+    background-color: $highlight-3;
+    &:nth-child(2) {
+        background-color: $highlight-2;
+    }
+    &:nth-child(3) {
+      background-color: $base-1;
+    }
+    &:nth-child(4) {
+      background-color: $highlight-1;
+    }
+  }
+}
+
+// Full-bleed side-by-side elements with lots of padding
+.twins {
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+  .twins--twin {
+    @media (min-width: 1024px) {
+      flex: 50;
+      &:first-child {
+        padding-left: 144px;
+      }
+      &:last-child {
+        padding-right: 144px;
+      }
+    }
+  }
+}
+
+// cardotrons are mini jumbotron panels
+.cardotron {
+  padding: 144px 48px;
+  h2 {
+    font-size: 5.4rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+}
+
+// Training program kludges
+.training-program--trainer {
+  img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
