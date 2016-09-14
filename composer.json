@@ -88,34 +88,8 @@
                 "https://www.drupal.org/files/issues/missing-dependencies-2655104-8.patch"
             },
             "drupal/panelizer": {
-                "2747739 - Mega Patch":
-                "https://www.drupal.org/files/issues/panelizer--alpha2-1ddfa61--2747739-5.patch",
-                "2701349 - Generate new UUIDs for displays when switching from default to field storage":
-                "https://www.drupal.org/files/issues/2701349-2.patch",
-                "2700597 - Explicitly set the Panels IPE URL root when saving in Panelizer":
-                "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch",
-                "2664682 - Implement admin UI for editing Panelizer defaults":
-                "https://www.drupal.org/files/issues/2664682-55.patch",
                 "2664572 - Add support for User entities":
                 "https://www.drupal.org/files/issues/2664572-3.patch"
-            },
-            "drupal/panels": {
-                "2747739 - Mega Patch":
-                "https://www.drupal.org/files/issues/panels--beta4-4c4a3a7--2747739-17--binary.patch",
-                "2667754 - Allow other modules to disable the IPE based on custom logic":
-                "https://www.drupal.org/files/issues/2667754-3.patch",
-                "Bandaid tempstore patch":
-                "https://www.drupal.org/files/issues/bandaid.patch",
-                "2697587 - Wizard API integration":
-                "https://www.drupal.org/files/issues/2697587-48.patch"
-            },
-            "drupal/scheduled_updates": {
-                "2674874 - Issue saving Schedule Update Type form":
-                "https://www.drupal.org/files/issues/schedule_updates-save_type-2674874-2.patch"
-            },
-            "drupal/workbench_moderation": {
-                "2668006 - Provide logical access control for when IPE should be applied to moderated nodes":
-                "https://www.drupal.org/files/issues/2668006-2.patch"
             },
             "drupal/metatag": {
                 "2786795 - DrupalConsole integration breaks Drush":
