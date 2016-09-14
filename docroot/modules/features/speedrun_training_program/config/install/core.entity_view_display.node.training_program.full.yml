@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.training_program.field_exercises
     - field.field.node.training_program.field_pokemon
     - field.field.node.training_program.field_trainer
+    - field.field.node.training_program.panelizer
     - node.type.training_program
   module:
     - panelizer
@@ -128,8 +129,8 @@ third_party_settings:
               settings: {  }
               third_party_settings: {  }
               weight: 0
-            region: left
-            weight: -9
+            region: bottom
+            weight: -1
             uuid: 5f0e34a5-6a09-4fad-8d3a-9cc932917b1f
             context_mapping:
               entity: '@panelizer.entity_context:entity'
@@ -171,16 +172,16 @@ third_party_settings:
         uuid: 1edaf851-ff3c-4014-8449-ab18e9cca885
         label: 'Training 2'
         weight: 0
-        layout: nine_three_stacked
+        layout: stripey_stacked
         layout_settings: {  }
-        page_title: ''
+        page_title: null
         storage_type: panelizer_default
         storage_id: 'node:training_program:full:training_2'
         pattern: panelizer
         builder: standard
         static_context: {  }
 _core:
-  default_config_hash: PqtihhreIN6sENcUq1lRUb2phFgxl1Xqtz8UVryOR0c
+  default_config_hash: DeRHonrF3OgHq173MWuky8g2StzitWz6EumL1dCsJE8
 id: node.training_program.full
 targetEntityType: node
 bundle: training_program
@@ -234,6 +235,8 @@ content:
     third_party_settings: {  }
   flag_registration:
     weight: 10
+    settings: {  }
+    third_party_settings: {  }
   links:
     weight: 100
     settings: {  }
