@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d29a0883a74c9f0faaa864c4bab07463",
-    "content-hash": "fdfa735ba61fe0f8e776562f13a7ce14",
+    "hash": "d44cfad264ed060678ce3f5a0e4237fa",
+    "content-hash": "1be862c3a31a19f2832761e3eea54c76",
     "packages": [
         {
             "name": "composer/installers",
@@ -670,7 +670,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/acquia_connector-8.x-1.4.zip",
-                "reference": null,
+                "reference": "36f7bebc88b4c18af5aa23d5fd8555839b6c7af9",
                 "shasum": null
             },
             "require": {
@@ -951,8 +951,7 @@
             "type": "drupal-core",
             "extra": {
                 "patches_applied": {
-                    "2655104 - List unmet dependencies instead of just failing": "https://www.drupal.org/files/issues/missing-dependencies-2655104-8.patch",
-                    "Plugin Lazy loading can cause usort warning": "https://www.drupal.org/files/issues/Iterating-through-array--2699157.patch"
+                    "2655104 - List unmet dependencies instead of just failing": "https://www.drupal.org/files/issues/missing-dependencies-2655104-8.patch"
                 }
             },
             "autoload": {
@@ -989,7 +988,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0-alpha27.zip",
-                "reference": null,
+                "reference": "231e2649678d58901368a9e5681f36865ce84e73",
                 "shasum": null
             },
             "require": {
@@ -1020,17 +1019,11 @@
         },
         {
             "name": "drupal/default_content",
-            "version": "8.1.0-alpha2",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/default_content.git",
-                "reference": "3b23552540802b357d33e66e0b024b3764bf0a4b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/default_content-8.x-1.0-alpha2.zip",
-                "reference": null,
-                "shasum": null
+                "reference": "c6a79ee2ffc71b0136d4988871618e05d8be4018"
             },
             "require": {
                 "drupal/core": "8.*",
@@ -1048,7 +1041,7 @@
             ],
             "description": "Imports default content when a module is enabled",
             "homepage": "https://www.drupal.org/project/default_content",
-            "time": "2015-10-02 04:07:57"
+            "time": "2016-04-26 23:32:14"
         },
         {
             "name": "drupal/devel",
@@ -1173,7 +1166,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-1.0-alpha8.zip",
-                "reference": null,
+                "reference": "51bbe80e35f6e962b3ec77172e9ad61fec7163dd",
                 "shasum": null
             },
             "require": {
@@ -1267,7 +1260,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta8.zip",
-                "reference": null,
+                "reference": "1edc3b91b51b849fb798612126b50d7d66b5830b",
                 "shasum": null
             },
             "require": {
@@ -1306,7 +1299,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/file_entity-8.x-2.0-beta2.zip",
-                "reference": null,
+                "reference": "1af9fe03f47e308c1118fd9e0e698da719a56b7c",
                 "shasum": null
             },
             "require": {
@@ -1376,7 +1369,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/formblock-8.x-1.0-beta9.zip",
-                "reference": null,
+                "reference": "1f5f0d498fbfe1af3d15612d82c63a427ebf3087",
                 "shasum": null
             },
             "require": {
@@ -1492,7 +1485,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/lightning-8.x-1.04.zip",
-                "reference": null,
+                "reference": "67b30506dfeaf3335b70f8da5e2cc3b92e907ddc",
                 "shasum": null
             },
             "require": {
@@ -1667,7 +1660,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/media_entity-8.x-1.5.zip",
-                "reference": null,
+                "reference": "bc79ca090ad30a008960fdf5bcaa699494292230",
                 "shasum": null
             },
             "require": {
@@ -1849,7 +1842,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.0-beta10.zip",
-                "reference": null,
+                "reference": "c0610ad2ad9318298823c24db66b8769095910a3",
                 "shasum": null
             },
             "require": {
@@ -1993,7 +1986,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/page_manager-8.x-1.0-alpha24.zip",
-                "reference": null,
+                "reference": "e17581138de8047ffa4b740a6d9074f854aa80c7",
                 "shasum": null
             },
             "require": {
@@ -2055,11 +2048,7 @@
                     "dev-8.x-3.x": "8.3.x-dev"
                 },
                 "patches_applied": {
-                    "2664572 - Add support for User entities": "https://www.drupal.org/files/issues/2664572-3.patch",
-                    "2747739 - Mega Patch": "https://www.drupal.org/files/issues/panelizer--alpha2-1ddfa61--2747739-5.patch",
-                    "2701349 - Generate new UUIDs for displays when switching from default to field storage": "https://www.drupal.org/files/issues/2701349-2.patch",
-                    "2700597 - Explicitly set the Panels IPE URL root when saving in Panelizer": "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch",
-                    "2664682 - Implement admin UI for editing Panelizer defaults": "https://www.drupal.org/files/issues/2664682-49.patch"
+                    "2664572 - Add support for User entities": "https://www.drupal.org/files/issues/2664572-3.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -4451,31 +4440,31 @@
         },
         {
             "name": "zendframework/zend-stdlib",
-            "version": "3.0.1",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-stdlib.git",
-                "reference": "8bafa58574204bdff03c275d1d618aaa601588ae"
+                "reference": "debedcfc373a293f9250cc9aa03cf121428c8e78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/8bafa58574204bdff03c275d1d618aaa601588ae",
-                "reference": "8bafa58574204bdff03c275d1d618aaa601588ae",
+                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/debedcfc373a293f9250cc9aa03cf121428c8e78",
+                "reference": "debedcfc373a293f9250cc9aa03cf121428c8e78",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5 || ^7.0"
+                "php": "^5.6 || ^7.0"
             },
             "require-dev": {
                 "athletic/athletic": "~0.1",
-                "fabpot/php-cs-fixer": "1.7.*",
-                "phpunit/phpunit": "~4.0"
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "^2.6.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev",
-                    "dev-develop": "3.1-dev"
+                    "dev-master": "3.1-dev",
+                    "dev-develop": "3.2-dev"
                 }
             },
             "autoload": {
@@ -4492,7 +4481,7 @@
                 "stdlib",
                 "zf2"
             ],
-            "time": "2016-04-12 21:19:36"
+            "time": "2016-09-13 14:38:50"
         }
     ],
     "packages-dev": [
@@ -6681,7 +6670,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/flag": 20,
-        "drupal/views_bootstrap": 20
+        "drupal/views_bootstrap": 20,
+        "drupal/default_content": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
