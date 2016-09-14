@@ -1,5 +1,9 @@
 <?php
 
+use Drupal\file\Entity\File;
+use Drupal\menu_link_content\Entity\MenuLinkContent;
+use Drupal\user\Entity\User;
+
 /**
  * Implements hook_install().
  *
@@ -9,9 +13,6 @@
  *
  * @see system_install()
  */
-
-use Drupal\menu_link_content\Entity\MenuLinkContent;
-
 function speedrun_core_install() {
   // Enable and set diniz as default theme.
   \Drupal::service('theme_installer')->install(['diniz']);
@@ -39,4 +40,43 @@ function speedrun_core_install() {
     'menu_name' => 'main',
     'weight' => 51,
   ])->save();
+
+  $accounts = [
+    [
+      'name' => 'Adam Balsam',
+      'mail' => 'adam.balsam@acquia.com',
+      'field_picture' => 'adamb.png',
+    ],
+    [
+      'name' => 'Adam Hoenich',
+      'mail' => 'adam.hoenich@acquia.com',
+      'field_picture' => 'adamh.png',
+    ],
+    [
+      'name' => 'John Kennedy',
+      'mail' => 'john.kennedy@acquia.com',
+      'field_picture' => 'john.png',
+    ],
+    [
+      'name' => 'Doris Wong',
+      'mail' => 'doris.wong@acquia.com',
+      'field_picture' => 'doris.png',
+    ],
+  ];
+
+  foreach ($accounts as $account) {
+    $pic_path = __DIR__ . '/pictarz/' . $account['field_picture'];
+    $pic_uri = 'public://' . $account['field_picture'];
+    $account['field_picture'] = file_unmanaged_copy($pic_path, $pic_uri, FILE_EXISTS_REPLACE);
+
+    $account['field_picture'] = File::create([
+      'uri' => $account['field_picture'],
+    ]);
+    $account['field_picture']->save();
+
+    $account = User::create($account);
+    $account->addRole('administrator');
+    $account->activate();
+    $account->save();
+  }
 }

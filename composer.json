@@ -32,7 +32,8 @@
         "drupal/views_infinite_scroll": "8.1.2",
         "drupal/formblock": "^8.1.0",
         "drupal/default_content": "dev-8.x-1.x",
-        "drupal/file_entity": "^8.2.0"
+        "drupal/file_entity": "^8.2.0",
+        "drupal/restui": "^8.1.0"
     },
     "repositories": [
         {
@@ -115,6 +116,10 @@
             "drupal/workbench_moderation": {
                 "2668006 - Provide logical access control for when IPE should be applied to moderated nodes":
                 "https://www.drupal.org/files/issues/2668006-2.patch"
+            },
+            "drupal/metatag": {
+                "2786795 - DrupalConsole integration breaks Drush":
+                "https://www.drupal.org/files/issues/metatag-deactivate_drupalconsole_services_0.patch"
             }
         }
     }
