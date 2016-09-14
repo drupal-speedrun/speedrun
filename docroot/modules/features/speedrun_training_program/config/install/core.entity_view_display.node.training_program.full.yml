@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.training_program.field_trainer
     - node.type.training_program
   module:
-    - image
     - panelizer
     - text
     - user
@@ -33,7 +32,7 @@ third_party_settings:
               settings: {  }
               third_party_settings: {  }
               weight: 0
-            region: middle
+            region: top
             weight: -3
             context_mapping:
               entity: '@panelizer.entity_context:entity'
@@ -44,7 +43,7 @@ third_party_settings:
             provider: ctools_block
             label_display: '0'
             formatter:
-              label: above
+              label: hidden
               type: text_default
               settings: {  }
               third_party_settings: {  }
@@ -66,7 +65,7 @@ third_party_settings:
                 view_mode: teaser
               third_party_settings: {  }
               weight: 0
-            region: right_above
+            region: right
             weight: -3
             context_mapping:
               entity: '@panelizer.entity_context:entity'
@@ -83,7 +82,7 @@ third_party_settings:
                 view_mode: compact
               third_party_settings: {  }
               weight: 0
-            region: left_above
+            region: left
             weight: -3
             context_mapping:
               entity: '@panelizer.entity_context:entity'
@@ -92,7 +91,7 @@ third_party_settings:
         label: Default
         uuid: 920f1cf6-b4a8-4073-890e-e1c600b9a03b
         weight: 0
-        layout: twocol_bricks
+        layout: stripey_stacked
         layout_settings: {  }
         page_title: ''
         storage_type: panelizer_default
@@ -113,7 +112,7 @@ third_party_settings:
               settings: {  }
               third_party_settings: {  }
               weight: 0
-            region: sidebar_right
+            region: left
             weight: -10
             uuid: 3959b5f2-33b6-48a9-8c91-f2f2d08d0b01
             context_mapping:
@@ -129,7 +128,7 @@ third_party_settings:
               settings: {  }
               third_party_settings: {  }
               weight: 0
-            region: sidebar_right
+            region: left
             weight: -9
             uuid: 5f0e34a5-6a09-4fad-8d3a-9cc932917b1f
             context_mapping:
@@ -146,7 +145,7 @@ third_party_settings:
                 view_mode: compact
               third_party_settings: {  }
               weight: 0
-            region: sidebar_left
+            region: right
             weight: -1
             uuid: 7916b623-9ae5-4dff-b7c9-af64103ac748
             context_mapping:
@@ -163,7 +162,7 @@ third_party_settings:
                 view_mode: teaser
               third_party_settings: {  }
               weight: 0
-            region: sidebar_left
+            region: right
             weight: 0
             uuid: 474a3cbc-a66d-4a28-8377-c4ffad3f0756
             context_mapping:
@@ -172,14 +171,16 @@ third_party_settings:
         uuid: 1edaf851-ff3c-4014-8449-ab18e9cca885
         label: 'Training 2'
         weight: 0
-        layout: booststrap-9-3
+        layout: nine_three_stacked
         layout_settings: {  }
         page_title: ''
         storage_type: panelizer_default
         storage_id: 'node:training_program:full:training_2'
         pattern: panelizer
-        builder: ipe
+        builder: standard
         static_context: {  }
+_core:
+  default_config_hash: PqtihhreIN6sENcUq1lRUb2phFgxl1Xqtz8UVryOR0c
 id: node.training_program.full
 targetEntityType: node
 bundle: training_program
@@ -231,6 +232,8 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
+  flag_registration:
+    weight: 10
   links:
     weight: 100
     settings: {  }

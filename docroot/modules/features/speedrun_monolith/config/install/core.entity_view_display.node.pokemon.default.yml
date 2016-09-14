@@ -13,7 +13,14 @@ dependencies:
     - node.type.pokemon
   module:
     - image
+    - panelizer
     - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
 id: node.pokemon.default
 targetEntityType: node
 bundle: pokemon
@@ -84,7 +91,11 @@ content:
     type: number_decimal
   flag_pokedex:
     weight: 10
+    settings: {  }
+    third_party_settings: {  }
   links:
     weight: 100
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   body: true
