@@ -16,6 +16,7 @@ modules:
   - features_ui
   - flag
   - formblock
+  - pathauto
   - speedrun_core
   - speedrun_layout
   - speedrun_theme_and_block_settings
