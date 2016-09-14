@@ -31,12 +31,30 @@ function diniz_preprocess_page(&$variables) {
 }
 
 /**
+ * Implements template_preprocess_field().
+ */
+function diniz_preprocess_field(&$variables) {
+  $variables['panelizer_display'] = FALSE;
+  if (isset($variables['element']['#object'])) {
+    $node = $variables['element']['#object'];
+    // $foo = $node->panelizer; <-this isn't an object hehe for some reason - like it is in the block peprecess below
+  }
+}
+
+/**
  * Implements template_preprocess_block().
  */
 function diniz_preprocess_block(&$variables) {
   $variables['lg_columns'] = 12;
   $variables['lg_offset'] = 0;
   $variables['lp_block'] = FALSE;
+  $variables['panelizer_display'] = FALSE;
+
+  if (isset($variables['elements']['content']['field']['#object'])) {
+    $node = $variables['elements']['content']['field']['#object'];
+    $variables['panelizer_display'] = ($node->panelizer->getValue()[0]['default']);
+  }
+
   if (isset($variables['content']['#block_content'])) {
     if ($variables['content']['#block_content']->bundle() == 'landing_page_block') {
       $variables['lp_block'] = TRUE;

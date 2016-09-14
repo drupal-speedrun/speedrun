@@ -4,16 +4,30 @@
  * Different classes and containers for landing page blocks.
  */
 #}
-{%
-  set classes = [
+{% if panelizer_display == 'training_2' %}
+  {%
+    set classes = [
+      'block',
+      'block-' ~ configuration.provider|clean_class,
+      'block-' ~ plugin_id|clean_class,
+      'clearfix',
+      'col-md-offset-4',
+      'col-md-8',
+      'text-center',
+    ]
+  %}
+{% else %}
+  {%
+    set classes = [
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
     'clearfix',
     'col-md-offset-1',
     'col-md-8',
-  ]
-%}
+    ]
+  %}
+{% endif %}
 {# Regular block #}
 <section{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
