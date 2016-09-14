@@ -7,11 +7,22 @@
  */
 
 /**
+ * Gives a list of content types that should not be constrained by a parent
+ * container.
+ */
+function _dinez_get_containerless() {
+  return [
+    'landing_page',
+    'training_program',
+  ];
+}
+
+/**
  * Implements template_preprocess_page().
  */
 function diniz_preprocess_page(&$variables) {
   if (isset($variables['node'])) {
-    if ($variables['node']->bundle() == 'landing_page') {
+    if (in_array($variables['node']->bundle(), _dinez_get_containerless())) {
       // Move landing page content into the containerless region.
       $variables['page']['containerless']['diniz_content'] = $variables['page']['content']['diniz_content'];
       unset($variables['page']['content']['diniz_content']);
