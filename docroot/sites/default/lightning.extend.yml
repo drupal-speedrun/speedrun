@@ -24,9 +24,9 @@ modules:
   - speedrun_pokedb
   # The following features will be built live and should be commented out when
   # building for the speedrun.
-  - speedrun_article
+  # - speedrun_article
   - speedrun_contact_form
-  - speedrun_training_program
+  # - speedrun_training_program
 
 # A system path to redirect to once installation is complete.
 redirect:
