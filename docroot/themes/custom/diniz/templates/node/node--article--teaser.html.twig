@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Make article teasers into bootstrap media components.
+ */
+#}
+
+<article class="media">
+
+    <div class="media-left">
+        {{ content.field_image }}
+    </div>
+
+    <div class="media-body">
+        {{ title_prefix }}
+          <h2 class="media-heading">
+              <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+          </h2>
+        {{ title_suffix }}
+
+        <div>
+            {{ content|without('field_image') }}
+        </div>
+    </div>
+
+</article>

@@ -162,3 +162,13 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/* line 161, ../sass/component.scss */
+.media {
+  margin-bottom: 48px;
+}
+
+/* line 164, ../sass/component.scss */
+.media-object {
+  width: 300px;
+}

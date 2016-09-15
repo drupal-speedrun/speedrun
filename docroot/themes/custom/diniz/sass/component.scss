@@ -156,3 +156,11 @@
     margin-right: auto;
   }
 }
+
+// Kludge for bootstrap's competing img-responsive class and media component
+.media {
+  margin-bottom: 48px;
+}
+.media-object {
+  width: 300px;
+}
