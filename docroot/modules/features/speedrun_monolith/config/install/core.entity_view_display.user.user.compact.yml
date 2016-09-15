@@ -6,13 +6,12 @@ dependencies:
     - field.field.user.user.field_picture
     - field.field.user.user.field_pokemon_enthusiast_since
   module:
-    - datetime
     - image
     - panelizer
     - user
 third_party_settings:
   panelizer:
-    enable: true
+    enable: false
     custom: false
     allow: false
     default: default
@@ -73,22 +72,12 @@ mode: compact
 content:
   field_picture:
     weight: 6
-    label: above
+    label: hidden
     settings:
       image_style: ''
-      image_link: ''
+      image_link: content
     third_party_settings: {  }
     type: image
-  field_pokemon_enthusiast_since:
-    weight: 7
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-  member_for:
-    weight: 5
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_pokemon_enthusiast_since: true
+  member_for: true

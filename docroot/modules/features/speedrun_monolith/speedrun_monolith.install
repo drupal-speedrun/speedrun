@@ -28,6 +28,24 @@ function speedrun_monolith_install() {
     ],
   ])->save();
 
+  $source_path = __DIR__ . '/pictures/aboutus_hero_1300x710.jpg';
+  $destination_uri = 'public://aboutus_hero_1300x710.jpg';
+
+  $file = File::create([
+    'uri' => file_unmanaged_copy($source_path, $destination_uri, FILE_EXISTS_REPLACE),
+  ]);
+  $file->save();
+
+  BlockContent::create([
+    'type' => 'landing_page_block',
+    'info' => 'About Us Quote',
+    'field_background_image' => $file,
+    'body' => [
+      'value' => '<blockquote>&quot;Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit.&quot;</blockquote><p><cite>Ash &amp; Charizard</cite></p>',
+      'format' => 'rich_text',
+    ],
+  ])->save();
+
   $blog_images = [];
   for ($i = 1; $i < 6; $i++) {
     $source_path = __DIR__ . '/pictures/blogimage' . $i . '.jpg';
@@ -99,4 +117,8 @@ END;
     'uid' => \Drupal::currentUser()->id(),
     'field_media_in_library' => TRUE,
   ])->save();
+
+  user_role_grant_permissions('anonymous', [
+    'access user profiles',
+  ]);
 }
