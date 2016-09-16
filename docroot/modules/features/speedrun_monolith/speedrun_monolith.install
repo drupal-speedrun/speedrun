@@ -90,33 +90,30 @@ END;
     ])->save();
   }
 
-  // Create a few tweets.
-  Media::create([
-    'bundle' => 'tweet',
-    'label' => 'webchick\'s secret',
-    'embed_code' => 'https://twitter.com/webchick/status/770820148643008512',
-    'status' => TRUE,
-    'uid' => \Drupal::currentUser()->id(),
-    'field_media_in_library' => TRUE,
-  ])->save();
-
-  Media::create([
-    'bundle' => 'tweet',
-    'label' => 'timplunkett\'s 10,000th tweet',
-    'embed_code' => 'https://twitter.com/webchick/status/770820148643008512',
-    'status' => TRUE,
-    'uid' => \Drupal::currentUser()->id(),
-    'field_media_in_library' => TRUE,
-  ])->save();
-
-  Media::create([
-    'bundle' => 'tweet',
-    'label' => 'Call for assistance',
-    'embed_code' => 'https://twitter.com/chx/status/707807007559032832',
-    'status' => TRUE,
-    'uid' => \Drupal::currentUser()->id(),
-    'field_media_in_library' => TRUE,
-  ])->save();
+  // Create a pile of tweets.
+  $tweets = [
+    'https://twitter.com/webchick/status/770820148643008512',
+    'https://twitter.com/chx/status/707807007559032832',
+    'https://twitter.com/50NerdsofGrey/status/773869750728491008',
+    'https://twitter.com/50NerdsofGrey/status/769223337398665216',
+    'https://twitter.com/50NerdsofGrey/status/759839205555965952',
+    'https://twitter.com/duggan/status/664541126469226497',
+    'https://twitter.com/BoredElonMusk/status/776144311809343488',
+    'https://twitter.com/BoredElonMusk/status/770344789950685184',
+    'https://twitter.com/BoredElonMusk/status/764190112070586368',
+    'https://twitter.com/BoredElonMusk/status/762801679737630720',
+  ];
+  shuffle($tweets);
+  foreach ($tweets as $i => $tweet_url) {
+    Media::create([
+      'bundle' => 'tweet',
+      'label' => 'Tweet ' . $i,
+      'embed_code' => $tweet_url,
+      'status' => TRUE,
+      'uid' => \Drupal::currentUser()->id(),
+      'field_media_in_library' => TRUE,
+    ])->save();
+  }
 
   user_role_grant_permissions('anonymous', [
     'access user profiles',
