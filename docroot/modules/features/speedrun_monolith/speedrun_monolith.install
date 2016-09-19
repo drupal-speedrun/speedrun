@@ -131,10 +131,4 @@ END;
   User::load(1)
     ->set('field_picture', $file)
     ->save();
-
-  // Change the default front page to /home.
-  \Drupal::configFactory()
-    ->getEditable('system.site')
-    ->set('page.front', '/home')
-    ->save();
 }
