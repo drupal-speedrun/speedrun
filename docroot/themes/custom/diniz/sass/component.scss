@@ -59,6 +59,7 @@
 // Make jumbotrons more jumbo
 .jumbotron {
   background-color: transparent;
+  margin-bottom: 0;
   padding-top: 96px;
   padding-bottom: 96px;
   @media (min-width: 768px) {

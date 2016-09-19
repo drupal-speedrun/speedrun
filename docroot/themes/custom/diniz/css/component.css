@@ -65,110 +65,111 @@
 /* line 60, ../sass/component.scss */
 .jumbotron {
   background-color: transparent;
+  margin-bottom: 0;
   padding-top: 96px;
   padding-bottom: 96px;
 }
 @media (min-width: 768px) {
-  /* line 65, ../sass/component.scss */
+  /* line 66, ../sass/component.scss */
   .jumbotron h1 {
     font-size: 8rem;
   }
-  /* line 68, ../sass/component.scss */
+  /* line 69, ../sass/component.scss */
   .jumbotron h2 {
     font-size: 6.2rem;
     text-transform: uppercase;
   }
 }
 
-/* line 77, ../sass/component.scss */
+/* line 78, ../sass/component.scss */
 .lp-columns {
   padding-top: 48px;
 }
-/* line 81, ../sass/component.scss */
+/* line 82, ../sass/component.scss */
 .lp-columns .flex-item:first-child strong {
   color: #89c95b;
 }
-/* line 86, ../sass/component.scss */
+/* line 87, ../sass/component.scss */
 .lp-columns .flex-item:nth-child(2) strong {
   color: #f8921e;
 }
-/* line 91, ../sass/component.scss */
+/* line 92, ../sass/component.scss */
 .lp-columns .flex-item:nth-child(3) strong {
   color: #00aef0;
 }
-/* line 96, ../sass/component.scss */
+/* line 97, ../sass/component.scss */
 .lp-columns .flex-item:nth-child(4) strong {
   color: #ffcc05;
 }
-/* line 101, ../sass/component.scss */
+/* line 102, ../sass/component.scss */
 .lp-columns img {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 109, ../sass/component.scss */
+/* line 110, ../sass/component.scss */
 .bg-rainbow .bg-rainbow--item {
   background-color: #89c95b;
 }
-/* line 111, ../sass/component.scss */
+/* line 112, ../sass/component.scss */
 .bg-rainbow .bg-rainbow--item:nth-child(2) {
   background-color: #f8921e;
 }
-/* line 114, ../sass/component.scss */
+/* line 115, ../sass/component.scss */
 .bg-rainbow .bg-rainbow--item:nth-child(3) {
   background-color: #00aef0;
 }
-/* line 117, ../sass/component.scss */
+/* line 118, ../sass/component.scss */
 .bg-rainbow .bg-rainbow--item:nth-child(4) {
   background-color: #ffcc05;
 }
 
 @media (min-width: 1024px) {
-  /* line 124, ../sass/component.scss */
+  /* line 125, ../sass/component.scss */
   .twins {
     display: flex;
   }
 }
 @media (min-width: 1024px) {
-  /* line 128, ../sass/component.scss */
+  /* line 129, ../sass/component.scss */
   .twins .twins--twin {
     flex: 50;
   }
-  /* line 131, ../sass/component.scss */
+  /* line 132, ../sass/component.scss */
   .twins .twins--twin:first-child {
     padding-left: 144px;
   }
-  /* line 134, ../sass/component.scss */
+  /* line 135, ../sass/component.scss */
   .twins .twins--twin:last-child {
     padding-right: 144px;
   }
 }
 
-/* line 142, ../sass/component.scss */
+/* line 143, ../sass/component.scss */
 .cardotron {
   padding: 144px 48px;
 }
-/* line 144, ../sass/component.scss */
+/* line 145, ../sass/component.scss */
 .cardotron h2 {
   font-size: 5.4rem;
 }
-/* line 147, ../sass/component.scss */
+/* line 148, ../sass/component.scss */
 .cardotron p {
   font-size: 2rem;
 }
 
-/* line 154, ../sass/component.scss */
+/* line 155, ../sass/component.scss */
 .training-program--trainer img {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 161, ../sass/component.scss */
+/* line 162, ../sass/component.scss */
 .media {
   margin-bottom: 48px;
 }
 
-/* line 164, ../sass/component.scss */
+/* line 165, ../sass/component.scss */
 .media-object {
   width: 300px;
 }

@@ -27,10 +27,10 @@
   {# Landing Page Block #}
   {% if background_image %}
     {# With a background image #}
-    <div class="background-cover jumbotron text-white" style="background-image: url({{ background_image }})">
+    <div{{ attributes|without('class') }} class="background-cover jumbotron text-white" style="background-image: url({{ background_image }})">
       <div class="container">
         <div class="row">
-          <section{{ attributes.addClass(classes) }}>
+          <section class="{{ classes|join(' ') }}">
             {{ title_prefix }}
             {% if label %}
               <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
