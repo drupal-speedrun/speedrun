@@ -8,10 +8,18 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
+  workbench_moderation:
+    enabled: true
+    allowed_moderation_states:
+      - published
+      - archived
+      - draft
+      - needs_review
+    default_moderation_state: draft
 name: 'Training Program'
 type: training_program
 description: 'A training service for trainers to level-up their pokemon.'
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 1
 display_submitted: false

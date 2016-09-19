@@ -118,4 +118,23 @@ END;
   user_role_grant_permissions('anonymous', [
     'access user profiles',
   ]);
+
+  // Set a user picture on the superuser account.
+  $source_path = __DIR__ . '/pictures/pokeball.jpg';
+  $destination_uri = 'public://pokeball.jpg';
+
+  $file = File::create([
+    'uri' => file_unmanaged_copy($source_path, $destination_uri, FILE_EXISTS_REPLACE),
+  ]);
+  $file->save();
+
+  User::load(1)
+    ->set('field_picture', $file)
+    ->save();
+
+  // Change the default front page to /home.
+  \Drupal::configFactory()
+    ->getEditable('system.site')
+    ->set('page.front', '/home')
+    ->save();
 }
