@@ -53,8 +53,8 @@ function diniz_preprocess_block(&$variables) {
   if (isset($variables['elements']['content']['field']['#object'])) {
     /** @var \Drupal\node\NodeInterface $node */
     $node = $variables['elements']['content']['field']['#object'];
-    if ($node->hasField('panelizer')) {
-      $variables['panelizer_display'] = ($node->panelizer->getValue()[0]['default']);
+    if ($node->hasField('panelizer') && ($node->get('panelizer')->isEmpty() == FALSE)) {
+      $variables['panelizer_display'] = ($node->panelizer[0]->default);
     }
   }
 
