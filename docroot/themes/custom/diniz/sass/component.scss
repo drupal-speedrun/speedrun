@@ -140,9 +140,11 @@
   &.twins__pulled {
     .twins--twin {
       &:first-child {
-        position: relative;
-        margin-top: -20%;
-        margin-bottom: 20%;
+        @media (min-width: 1024px) {
+          position: relative;
+          margin-top: -20%;
+          margin-bottom: 20%;
+        }
       }
     }
   }

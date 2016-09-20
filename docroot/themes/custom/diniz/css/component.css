@@ -144,48 +144,50 @@
     padding-right: 144px;
   }
 }
-/* line 142, ../sass/component.scss */
-.twins.twins__pulled .twins--twin:first-child {
-  position: relative;
-  margin-top: -20%;
-  margin-bottom: 20%;
+@media (min-width: 1024px) {
+  /* line 142, ../sass/component.scss */
+  .twins.twins__pulled .twins--twin:first-child {
+    position: relative;
+    margin-top: -20%;
+    margin-bottom: 20%;
+  }
 }
 
-/* line 152, ../sass/component.scss */
+/* line 154, ../sass/component.scss */
 .cardotron {
   padding: 120px 48px;
 }
-/* line 154, ../sass/component.scss */
+/* line 156, ../sass/component.scss */
 .cardotron h2 {
   font-size: 5.4rem;
 }
-/* line 157, ../sass/component.scss */
+/* line 159, ../sass/component.scss */
 .cardotron p {
   font-size: 2rem;
 }
 
-/* line 164, ../sass/component.scss */
+/* line 166, ../sass/component.scss */
 .training-program--trainer img {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 171, ../sass/component.scss */
+/* line 173, ../sass/component.scss */
 .media {
   margin-bottom: 48px;
 }
 
-/* line 174, ../sass/component.scss */
+/* line 176, ../sass/component.scss */
 .media-object {
   width: 300px;
 }
 
-/* line 180, ../sass/component.scss */
+/* line 182, ../sass/component.scss */
 .pointers .pointers--pointy {
   position: relative;
   z-index: 1;
 }
-/* line 183, ../sass/component.scss */
+/* line 185, ../sass/component.scss */
 .pointers .pointers--pointy:after {
   border: 50px solid transparent;
   border-top-color: #89c95b;
@@ -199,7 +201,7 @@
   width: 0;
   z-index: 10;
 }
-/* line 197, ../sass/component.scss */
+/* line 199, ../sass/component.scss */
 .pointers .pointers--pointy:nth-child(2):after {
   border-top-color: transparent;
   border-right-color: #f8921e;
