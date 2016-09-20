@@ -137,11 +137,20 @@
       }
     }
   }
+  &.twins__pulled {
+    .twins--twin {
+      &:first-child {
+        position: relative;
+        margin-top: -20%;
+        margin-bottom: 20%;
+      }
+    }
+  }
 }
 
 // cardotrons are mini jumbotron panels
 .cardotron {
-  padding: 144px 48px;
+  padding: 120px 48px;
   h2 {
     font-size: 5.4rem;
   }
@@ -164,4 +173,34 @@
 }
 .media-object {
   width: 300px;
+}
+
+// Make arrows appear!!
+.pointers {
+  .pointers--pointy {
+    position: relative;
+    z-index: 1;
+    &:after {
+      border: 50px solid transparent;
+      border-top-color: $highlight-3;
+      content: "";
+      display: block;
+      height: 0;
+      left: 50%;
+      margin-left: -25px;
+      position: absolute;
+      top: 100%;
+      width: 0;
+      z-index: 10;
+    }
+    &:nth-child(2) {
+      &:after {
+        border-top-color: transparent;
+        border-right-color: $highlight-2;
+        left: -100px;
+        margin-left: 0;
+        top: 70%;
+      }
+    }
+  }
 }

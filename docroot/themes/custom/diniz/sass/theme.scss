@@ -21,3 +21,12 @@
   background-position: center bottom;
   background-repeat: repeat-x;
 }
+
+// Some quick and dirty styles for articles
+.node--type-article.node--view-mode-full {
+  .media-object {
+    margin-top: ($spacer * 2);
+    margin-bottom: ($spacer * 2);
+    width: auto;
+  }
+}

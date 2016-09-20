@@ -56,7 +56,7 @@
 }
 
 // Panels aren't necessarily in rows like they should be so we add some padding
-// to the bottom of each for our main pakemon views. Each panel is contained
+// to the bottom of each for our main pokemon views. Each panel is contained
 // within its own div, so we need to use :last-child to override styles from
 // bootstrap.
 article.panel:last-child {
@@ -105,3 +105,13 @@ article.panel:last-child {
     text-align: center;
   }
 }
+
+.margin-top-1 { margin-top: $spacer; }
+.margin-top-2 { margin-top: ($spacer * 2); }
+.margin-top-3 { margin-top: ($spacer * 3); }
+.margin-top-4 { margin-top: ($spacer * 4); }
+
+.margin-bottom-1 { margin-bottom: $spacer; }
+.margin-bottom-2 { margin-bottom: ($spacer * 2); }
+.margin-bottom-3 { margin-bottom: ($spacer * 3); }
+.margin-bottom-4 { margin-bottom: ($spacer * 4); }

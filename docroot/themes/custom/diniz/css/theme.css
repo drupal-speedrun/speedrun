@@ -22,3 +22,10 @@
   background-position: center bottom;
   background-repeat: repeat-x;
 }
+
+/* line 27, ../sass/theme.scss */
+.node--type-article.node--view-mode-full .media-object {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: auto;
+}

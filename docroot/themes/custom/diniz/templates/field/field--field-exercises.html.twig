@@ -4,14 +4,32 @@
  * Adds classes to execises
  */
 #}
+
 {%
-  set classes = [
+  set parent_classes = [
     'field',
     'field--name-' ~ field_name|clean_class,
     'field--type-' ~ field_type|clean_class,
     'field--label-' ~ label_display,
+    'field--items',
+    'bg-rainbow',
+    'twins',
   ]
 %}
+{%
+  set child_classes = [
+    'field--item',
+    'text-white',
+    'bg-rainbow--item',
+    'twins--twin',
+    'cardotron',
+  ]
+%}
+{% if panelizer_display ==  'alternative' %}
+  {% set parent_classes = parent_classes|merge(['twins__pulled', 'pointers']) %}
+  {% set child_classes = child_classes|merge(['pointers--pointy']) %}
+{% endif %}
+
 {%
   set title_classes = [
     'field--label',
@@ -21,9 +39,9 @@
 
 {% if label_hidden %}
   {% if multiple %}
-    <div{{ attributes.addClass(classes, 'field--items bg-rainbow twins') }}>
+    <div{{ attributes.addClass(parent_classes) }}>
       {% for item in items %}
-        <div{{ item.attributes.addClass('field--item text-white bg-rainbow--item twins--twin cardotron') }}>{{ item.content }}</div>
+        <div{{ item.attributes.addClass(child_classes) }}>{{ item.content }}</div>
       {% endfor %}
     </div>
   {% else %}

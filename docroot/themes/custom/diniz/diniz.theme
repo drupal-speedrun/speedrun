@@ -36,8 +36,12 @@ function diniz_preprocess_page(&$variables) {
 function diniz_preprocess_field(&$variables) {
   $variables['panelizer_display'] = FALSE;
   if (isset($variables['element']['#object'])) {
-    $node = $variables['element']['#object'];
-    // $foo = $node->panelizer; <-this isn't an object hehe for some reason - like it is in the block peprecess below
+    if ($variables['element']['#field_name'] == 'field_exercises') {
+      $node = $variables['element']['#object'];
+      if ($node->hasField('panelizer') && ($node->get('panelizer')->isEmpty() == FALSE)) {
+        $variables['panelizer_display'] = ($node->panelizer[0]->default);
+      }
+    }
   }
 }
 
