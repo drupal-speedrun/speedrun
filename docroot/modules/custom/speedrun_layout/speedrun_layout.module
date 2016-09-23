@@ -2,13 +2,14 @@
 
 /**
  * Implements hook_layout_alter().
+ *
+ * Unset the layouts provided by Panels that are incompatible with our theme. We
+ * need to let `onecol` stick around because Panelizer seems to default to that
+ * when first panelizing a layout - which causes an exception if it doesn't
+ * exist.
  */
 function speedrun_layout_layout_alter(array &$definitions) {
-  $category_map = [
-    'Columns: 1' => 'Unsupported',
-    'Columns: 2' => 'Unsupported',
-    'Columns: 3' => 'Unsupported',
-  ];
+  $remove = ['Columns: 2', 'Columns: 3'];
 
   foreach ($definitions as $key => $info) {
     $category = $info['category'];
@@ -16,8 +17,8 @@ function speedrun_layout_layout_alter(array &$definitions) {
       $category = $category->getUntranslatedString();
     }
 
-    if (isset($category_map[$category])) {
-      $definitions[$key]['category'] = t($category_map[$category]);
+    if (in_array($category, $remove)) {
+      unset($definitions[$key]);
     }
   }
 }

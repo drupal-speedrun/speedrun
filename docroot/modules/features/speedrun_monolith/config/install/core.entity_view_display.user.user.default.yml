@@ -80,7 +80,7 @@ third_party_settings:
         uuid: e061b873-3cd3-40e9-95f8-c21b9ad37b41
         label: Default
         weight: 0
-        layout: twocol_stacked
+        layout: stripey_stacked
         layout_settings: {  }
         page_title: ''
         storage_type: panelizer_default
