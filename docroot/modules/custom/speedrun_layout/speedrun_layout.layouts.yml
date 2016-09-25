@@ -14,6 +14,7 @@ stripey_stacked:
       label: Right (6 columns)
     bottom:
       label: Bottom (containerless)
+
 eight_four_stacked:
   label: 8/4 Stacked
   category: Speedrun
@@ -30,6 +31,7 @@ eight_four_stacked:
       label: Right (4 columns)
     bottom:
       label: Bottom (containerless)
+
 nine_three_stacked:
   label: 9/3 Stacked
   category: Speedrun

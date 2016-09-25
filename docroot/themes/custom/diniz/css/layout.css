@@ -170,3 +170,8 @@ article.panel:last-child {
 .margin-bottom-n-45 {
   margin-bottom: -45px;
 }
+
+/* line 125, ../sass/layout.scss */
+#panels-ipe-content [data-region-name] .container, #panels-ipe-content [data-region-name] .jumbotron, #panels-ipe-content [data-region-name] section.block {
+  clear: both;
+}
