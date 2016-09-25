@@ -120,3 +120,9 @@ article.panel:last-child {
 .margin-bottom-n-45 {
   margin-bottom: -45px;
 }
+
+#panels-ipe-content [data-region-name] {
+  .container, .jumbotron {
+    clear: both;
+  }
+}
